@@ -1,0 +1,14 @@
+.nbl-card
+  .nbl-card__info 
+    .n-h2=nh2
+    .n-p2=np2
+  .nbl-card__content 
+    .n-cardSlider._bottomBig 
+      .n-cardSlider__wrapper.swiper-wrapper
+        - var val = 0;
+        - var imgSrc = ["/img/newrubkoff/fancyb-1.jpg", "/img/newrubkoff/n-card2.jpg", "/img/newrubkoff/n-card3.jpg", "/img/newrubkoff/n-card1.jpg", "/img/newrubkoff/n-card2.jpg"]
+        - var n = 0;
+        while val < 5
+          .n-cardSlider__item.swiper-slide
+            img(src=imgSrc[val] alt="")
+          - val++

@@ -1,0 +1,33 @@
+.nbl-card._imgFirst
+  .nbl-card__info._noGap  
+    .n-badgeIconsMesh
+      .n-badgeIcon 
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.92648 13.8094C3.58793 14.3619 4.37127 14.7503 5.2123 14.9426C5.29278 14.9689 5.34694 14.8639 5.29278 14.8114C3.49136 13.0976 4.4812 11.2429 5.2123 10.4067C5.73355 9.80967 6.47593 8.82643 6.42178 7.50794C6.42178 7.37594 6.55717 7.27019 6.66397 7.34969C7.68616 7.87694 8.38492 9.03718 8.57296 9.98592C8.86931 9.69642 8.97687 9.24793 8.97687 8.85268C8.97687 8.72068 9.13783 8.61493 9.27247 8.72068C10.2405 9.59067 11.9073 12.5434 9.21832 14.8631C9.16491 14.9164 9.21831 15.0221 9.27247 14.9959C10.0878 14.7827 10.8546 14.4156 11.5312 13.9144C15.9141 10.5394 13.0634 4.55447 11.2078 2.57748C10.9663 2.33973 10.5361 2.49798 10.5361 2.84073C10.509 3.55322 10.2939 4.34372 9.72978 4.87096C9.29955 3.07848 7.86593 1.04224 5.8223 0.0402521C5.55378 -0.0917468 5.23111 0.119002 5.25818 0.409249C5.31083 2.86173 3.70647 4.42322 2.30821 6.45345C1.0709 8.27219 0.264582 11.6209 2.92648 13.8094Z" fill="white"/>
+        </svg>
+        .n-h6 the house is for sale
+      .n-badgeIcon._grey  
+        .n-h6 Selection of a site
+    .n-h2 Green Park 1 и Green Park 2
+    .n-p2
+      |Chamber villages in a pine forest surrounded by a biosphere reserve.
+      |Green Park villages are located in a pine forest surrounded by a biosphere reserve,
+      |just 45 minutes drive from the Moscow Ring Road along the Simferopol highway and the M4-Don highway.
+    .nbl-card__icon 
+      img(src="/img/newrubkoff/nbl-Card.png" alt="")
+  .nbl-card__content 
+    .n-cardSlider 
+      .n-cardSlider__wrapper.swiper-wrapper
+        - var val = 0;
+        - var imgSrc = ["/img/newrubkoff/n-card1.jpg", "/img/newrubkoff/n-card2.jpg", "/img/newrubkoff/n-card3.jpg", "/img/newrubkoff/n-card1.jpg", "/img/newrubkoff/n-card2.jpg"]
+        - var n = 0;
+        while val < 5
+          .n-cardSlider__item.swiper-slide
+            img(src=imgSrc[n] alt="")
+          - val++
+      <div class="n-cardSlider__button swiper-button-next">
+        <img src="/img/newrubkoff/slider-arrow.png" alt="">
+      </div>
+      <div class="n-cardSlider__button swiper-button-prev">
+        <img src="/img/newrubkoff/slider-arrow.png" alt="">
+      </div>

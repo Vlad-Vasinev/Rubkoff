@@ -1,0 +1,256 @@
+//ui wrapper
+.ui-dek
+  margin: aCalc(100) auto
+  display: flex 
+  flex-direction: column
+  gap: aCalc(40)
+  +r($sm)
+    gap: 24px
+  h1 
+    padding-bottom: aCalc(4)
+    border-bottom: aCalc(2) solid #e28140
+    +r($sm)
+      padding-bottom: 4px
+      border-bottom: 2px solid #e28140
+  &__el
+    display: block 
+    h2 
+      font-style: italic
+      font-weight: 400
+      font-size: aCalc(16)
+      +r($sm)
+        font-size: 11px
+//ui wrapper
+
+//ui components
+
+//text
+.n-h1 
+  font-size: aCalc(48)
+  line-height: 100%
+  font-weight: 500
+  color: #0B0B0B
+  letter-spacing: -2.88px
+  font-family: $secondaryFont
+  text-transform: uppercase
+  +r($sm)
+    font-size: 28px
+    letter-spacing: -1.68px
+
+.n-h2
+  font-size: aCalc(26)
+  line-height: 110%
+  font-weight: 500
+  color: #0B0B0B
+  font-family: $secondaryFont
+  letter-spacing: -1.56px
+  text-transform: uppercase
+  +r($sm)
+    font-size: 19px
+    letter-spacing: -1.14px
+
+.n-h3
+  font-size: aCalc(24)
+  line-height: 120%
+  font-weight: 500
+  color: #0B0B0B
+  +r($sm)
+    font-size: 19px
+
+.n-h4
+  font-size: aCalc(18)
+  line-height: 120%
+  font-weight: 500
+  color: #0B0B0B
+  +r($sm)
+    font-size: 16px
+
+.n-h5
+  font-size: aCalc(16)
+  line-height: 120%
+  font-weight: 600
+  color: #0B0B0B
+  +r($sm)
+    font-size: 14px
+
+.n-h6
+  font-size: aCalc(13)
+  line-height: 110%
+  font-weight: 500
+  color: #0B0B0B
+  letter-spacing: -0.39px
+  text-transform: uppercase
+  +r($sm)
+    font-size: 12px
+
+.n-h7
+  font-size: aCalc(14)
+  line-height: 129%
+  font-weight: 400
+  color: #0A0A0A
+  +r($sm)
+    font-size: 12px
+
+.n-p1 
+  font-size: aCalc(18)
+  line-height: 120%
+  font-weight: 400
+  color: #0B0B0B
+  +r($sm)
+    font-size: 15px
+
+.n-p2
+  font-size: aCalc(16)
+  line-height: 120%
+  font-weight: 400
+  color: #0B0B0B
+  +r($sm)
+    font-size: 15px
+  &._opacity
+    opacity: 0.4
+
+.n-p3
+  font-size: aCalc(38)
+  line-height: 120%
+  font-weight: 500
+  color: #000000
+  +r($sm)
+    font-size: 18px
+
+//text
+
+//buttons
+.n-button1, button.n-button1
+  font-size: aCalc(15)
+  line-height: 100%
+  font-weight: 500
+  color: #0B0B0B
+  text-transform: uppercase
+  cursor: pointer
+  +r($sm)
+    font-size: 14px
+
+.n-button2, button.n-button2
+  font-size: aCalc(13)
+  line-height: 100%
+  font-weight: 500
+  color: #0B0B0B
+  text-transform: uppercase
+  cursor: pointer
+  +r($sm)
+    font-size: 12px
+
+.n-link, button.n-link
+  font-size: aCalc(18)
+  line-height: 120%
+  font-weight: 400
+  color: #0B0B0B
+  text-decoration: underline
+  cursor: pointer
+  +r($sm)
+    font-size: 14px
+
+.n-button-green
+  position: relative
+  border-radius: aCalc(6)
+  background-color: #2E5E5E
+  color: #ffffff
+  width: max-content
+  padding: aCalc(16) aCalc(24)
+  display: flex
+  gap: aCalc(6)
+  align-items: center
+  cursor: pointer
+  transition: background-color .3s
+  +r($sm)
+    padding: 14px 30px
+    border-radius: 6px
+    gap: 6px
+  &:hover 
+    background-color: #1D3C3C
+  &._white
+    background-color: transparent 
+    border: aCalc(2) dashed #9747FF
+    +r($sm)
+      border: 2px dashed #9747FF
+    p 
+      color: #000000
+    svg 
+      path 
+        stroke: #000000
+  &.s-white
+    padding: aCalc(20)
+    +r($sm)
+      padding: 20px
+  p 
+    color: #ffffff
+  svg, img 
+    width: aCalc(20)
+    height: aCalc(20)
+    +r($sm)
+      width: 20px
+      height: 20px 
+
+.read-more
+  width: max-content
+  border-bottom: 1px solid transparent
+  transition: border-bottom .3s
+  text-transform: unset
+  &:hover 
+    border-bottom: 1px solid #0E0E0E
+
+//buttons
+
+//badges
+.n-badgeIconsMesh
+  display: flex
+  gap: aCalc(4)
+  +r($sm)
+    gap: 4px
+
+.n-badgeIcon 
+  padding: aCalc(7) aCalc(8)
+  border-radius: aCalc(4)
+  background-color: #EF6F46
+  display: flex
+  align-items: center
+  gap: aCalc(11)
+  width: max-content
+  +r($sm)
+    padding: 7px 8px
+    border-radius: 4px
+    gap: 11px
+  &._grey 
+    gap: 0
+    background-color: rgba(32, 32, 32, 0.40)
+  &._bl-white
+    display: block
+    gap: 0
+    background-color: #CED0DC
+    .n-h6 
+      color: #0A0A0A
+  svg, img 
+    width: aCalc(15)
+    height: aCalc(15)
+    +r($sm)
+      width: 15px
+      height: 15px
+  .n-h6 
+    color: #ffffff
+//badges
+
+//characteristics
+.n-charactersMesh
+  display: flex
+  flex-direction: column
+
+.n-character
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #000000
+  padding: aCalc(10) 0
+  +r($sm)
+    padding: 8px 0
+  .n-h6:first-child 
+    text-transform: uppercase
+//characteristics

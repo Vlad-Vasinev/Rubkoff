@@ -1,0 +1,14 @@
+
+.n-cardSlider
+  width: aCalc(1416)
+  overflow: hidden
+  +r($sm)
+    width: unset
+  &__item 
+    cursor: pointer
+    img, video 
+      width: 100%
+      height: aCalc(800)
+      object-fit: cover
+      +r($sm)
+        height: 272px

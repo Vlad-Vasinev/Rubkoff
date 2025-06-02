@@ -1,0 +1,29 @@
+.equip-table
+  .equip-table__ctr
+    .equip-table__col.equip-table__col-head
+      .equip-table__row
+      each val in ['Foundation', 'Design ', 'Floor height', 'Rafter system', 'Roof', 'Logistics and labor included', 'Rough finishing', 'External finishing', ' Interior finishing', 'Furniture and plumbing', "Not furniture and plumbing 1"]
+        .equip-table__row
+          .h6= val
+          .equip-table__desc 
+            p.h5 <b>Foundation:</b> reinforced concrete driven piles 150x150 with cap to special order Rubkoff Rostverk 200x200 larch 
+      .equip-table__row
+    each h in [ 'Cold circuit', 'Warm contour', 'White box', 'Under the slippers', "Not under slippers"]
+      .equip-table__col
+        .equip-table__row
+          span= h
+        - var n = 0;
+        while n < 6
+          .equip-table__row
+            .equip-table__check
+          - n++
+        - var n = 0;
+        while n < 5
+          .equip-table__row
+          - n++
+        .equip-table__row
+          .buttonM from 32 000 ₽/m²
+  template.equip-table-check-icon
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><rect width="28" height="28" fill="#D5B38E" rx="14"/><path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="m6.5 14.78 5 5.89 10-12.5"/></svg>
+  template.equip-table-info-icon
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><rect width="23" height="23" x=".5" y=".5" stroke="#CED0DC" rx="11.5"/><path fill="#CED0DC" fill-rule="evenodd" d="M13.69 9.72c.23.23.31.57.27.89-.06.47-.2.9-.35 1.35l-.51 1.41-.83 2.27c-.07.18-.12.39-.14.58-.02.22.13.33.33.23.16-.08.3-.18.43-.3a30.56 30.56 0 0 0 .88-.93c.07-.09.15-.22.25-.27.2-.1.35.15.31.31-.03.17-.14.3-.24.44h-.01c0 .02-.02.03-.03.04a8 8 0 0 1-1.14 1.21 4.9 4.9 0 0 1-1.91 1c-.34.07-.7.06-1.05.01a.76.76 0 0 1-.58-.43c-.19-.4-.06-.9.04-1.31.12-.5.3-.99.47-1.47l.01-.03.01-.02.01-.04.02-.04c.2-.56.42-1.11.63-1.67l.59-1.52.05-.12v-.02c.05-.1.09-.2.1-.3.04-.24-.14-.46-.38-.32-.43.25-.75.61-1.07.98l-.04.05-.3.33c-.1.11-.22.25-.39.12-.18-.13-.13-.3-.02-.45a5.9 5.9 0 0 1 2.19-1.97c.38-.18.91-.36 1.41-.37.37 0 .73.09.99.36Zm.57-3.63c.48.19.74.6.74 1.2a1.48 1.48 0 0 1-2.1 1.32c-.5-.23-.73-.79-.61-1.42a1.5 1.5 0 0 1 1.97-1.1Z" clip-rule="evenodd"/></svg>

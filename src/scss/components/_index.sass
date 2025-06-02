@@ -1,0 +1,585 @@
+@imprt _lazy
+.form-policy
+  color: #828282
+  a
+    text-decoration: underline
+
+.gallery-grid
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  +aProp(gap, 16)
+  +aProp(row-gap, 80)
+  +mob
+    grid-template-columns: 100%
+    row-gap: unset
+    gap: 40px
+
+.product-card
+  position: relative
+  width: 100%
+  max-width: 100% !important
+  overflow: hidden
+  display: grid 
+  grid-template-columns: 100%
+  &__description
+    order: 1
+    +aProp(margin-top, 16)
+    +mob
+      width: 100%
+      margin-top: 12px
+
+    > .h6
+      color: $DarkGray
+  &__cat
+
+  &__title
+    +aProp(margin-bottom, 8)
+    font-weight: 600
+    +mob
+      margin-bottom: 8px
+  &__chars-ctr
+    display: flex
+    flex-wrap: nowrap
+    align-items: flex-start
+    +aProp(gap, 16)
+    +hideScroll
+    +mob
+      width: 100%
+      overflow: scroll
+      justify-content: flex-start
+      gap: 10px
+
+  &__char
+    display: flex
+    flex-wrap: nowrap
+    +aProp(gap, 6)
+    white-space: nowrap
+    +mob
+      gap: 2px
+    ._key
+      color: #7B7B7B
+  &:hover &__title
+    +dsk
+      color: $LightGreen
+  &__img
+    width: 100%
+    height: auto
+    aspect-ratio: 91/54
+    +aProp(border-radius, 12)
+    +mob
+      border-radius: 12px
+    img, video
+      +cover-img
+    img, video, picture
+      border-radius: inherit
+      
+      
+  &__badges 
+    z-index: 2
+    position: absolute
+    top: 0
+    left: 0
+    margin: aCalc(16)
+    display: flex
+    gap: aCalc(4)
+    +r($sm)
+      margin: 6px
+      gap: 4px
+  
+.product-card
+  &_special .desc-table
+    margin: 0
+    position: absolute
+    top: aCalc(16)
+    left: aCalc(16)
+    z-index: 2
+    width: aCalc(445)  
+    +mob
+      width: auto
+      top: 6px
+      left: 6px
+      right: 6px
+  &_special &__img
+    width: 100%
+    height: auto
+    aspect-ratio: 1840/850
+    +mob
+      aspect-ratio: unset
+      aspect-ratio: 375/590
+    
+.gallery-grid
+  .product-card.product-card_special
+    +dsk
+      grid-column: 1/-1
+    +mob
+      width: auto
+      margin: 0 -16px
+      max-width: unset !important
+.page__container_catalog .page__block > .product-card.product-card_special
+  margin: aCalc(80) 0
+  +mob
+    margin: 40px 0
+
+.badge
+  @extend .h6
+  text-align: center
+  color: $White
+  background-color: rgba(39,47,51, 0.25)
+  border-radius: aCalc(6)
+  padding: aCalc(6) aCalc(10)
+  width: max-content
+  backdrop-filter: blur(36px)
+  +r($sm)
+    padding: 4px 10px
+    border-radius: 6px
+  &_hot
+    backdrop-filter: unset
+    position: relative
+    background-color: $AuroraOrange
+    padding: aCalc(6) aCalc(10) aCalc(6) aCalc(30)
+    +r($sm)
+      padding: 4px 4px 4px 24px
+  &__icon
+    max-width: max-content
+    display: grid
+    justify-content: center
+    align-content: center
+    position: absolute
+    left: aCalc(6)
+    top: 50%
+    transform: translateY(-50%)
+    +r($sm)
+      left: 4px
+    svg
+      width: aCalc(18)
+      height: aCalc(18)
+      +r($sm)
+        width: 18px
+        height: 18px
+
+.ymaps-2-1-79-balloon
+  top: 0 !important
+
+.card-gallery
+  width: 100%
+  max-width: 100% !important
+  overflow: hidden
+  position: relative
+  +aProp(border-radius, 12)
+  mask-image: radial-gradient(white, black)
+  @include gradient-safari-mixin
+  +mob
+    border-radius: 12px
+  .swiper-wrapper.card-gallery__wrapper
+    .swiper-slide.card-gallery__slide
+      width: 100%
+      height: auto
+      aspect-ratio: 91/60
+      img, video
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+
+.slider-navigation-next, .slider-navigation-prev
+  background-color: #F9F9F9
+  height: max-content
+  +aProp(border-radius, 12)
+  +mob
+    border-radius: 12px
+
+  .slide-button-inner > span, > span:only-child
+    display: block
+    +aProp(padding, 12)
+    +aProp(border-radius, 12)
+    +mob
+      border-radius: 12px
+      padding: 10px
+    svg
+      +aProp(width, 24)
+      height: auto
+      aspect-ratio: 1
+      +mob
+        width: 20px
+.slider-navigation-prev
+.slider-navigation-next
+  > * 
+    transform: rotate(180deg)
+  
+.slider-pagination-navigation
+  +dsk
+    width: 100%
+    margin: 0
+    +aProp(padding, 16)
+    justify-content: center
+    align-items: center
+  .swiper-pagination
+    display: flex
+    +dsk
+      width: max-content
+      margin: 0 aCalc(32)
+      position: static
+    .swiper-pagination-bullet
+      background-color: #CED0DC
+      opacity: 0.5
+      transition-duration: 0.2s
+      transition-property: transform, background-color, opacity, background-color
+      display: block
+      +dsk
+        +wah(aCalc(6))
+      +mob
+        +wah(6px)
+      &.swiper-pagination-bullet-active
+        opacity: 1
+        background-color: #224646
+        transform: scale(1.34)
+
+.slider-corner-navigation, .slider-pagination-navigation
+  display: flex
+  position: absolute
+  bottom: 0
+  z-index: 2
+  left: 0
+  +aProp(margin, 16)
+  +aProp(gap, 6)
+  +mob
+    left: unset
+    right: 0
+    margin: 10px
+    gap: 6px
+
+.slider-pagination-navigation_static
+  position: static
+  +mob
+    width: 100%
+    margin: 0 auto
+    padding-bottom: 24px
+    align-items: center
+    gap: 0
+    justify-content: center
+  .swiper-pagination
+    position: static
+    width: max-content
+
+    align-items: center
+    +mob
+      margin: 0 32px
+    .swiper-pagination-bullet
+      +mob
+        +wah(6px)
+
+
+[data-fs-ctr]._fs-inited
+  [data-fs-full]
+    cursor: zoom-in
+
+.three-column-slider, .four-column-slider, .n-column-slider
+  .swiper-wrapper
+    +dsk
+      display: grid
+      +aProp(gap, 20)
+  &:not(.swiper-initialized)
+    .swiper-wrapper
+      display: grid 
+      grid-auto-flow: column
+      grid-auto-columns: 85.334211%
+      gap: 10px
+      
+
+.three-column-slider > .swiper-wrapper
+  +dsk
+    grid-template-columns: repeat(3, 1fr)
+.four-column-slider > .swiper-wrapper
+  +dsk
+    grid-template-columns: repeat(4, 1fr)
+.n-column-slider
+  --columns: 4
+  .swiper-wrapper
+    +dsk
+      grid-template-columns: repeat(var(--columns), 1fr)
+
+.video-link-decor
+  content: ''
+  display: block
+  backdrop-filter: blur(4px)
+  width: aCalc(64)
+  height: auto
+  
+  aspect-ratio: 1.33
+  --aboba: calc( 100% / 2 )
+  position: absolute
+  z-index: 2
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 76 56'%3E%3Cpath fill='%23fff' d='m31.5 18.77 14.03 8.25a1 1 0 0 1 0 1.72L31.51 37a1 1 0 0 1-1.51-.86v-16.5a1 1 0 0 1 1.5-.86Z'/%3E%3C/svg%3E")
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  background-color: rgba(255, 255, 255, 0.2)
+  top: 50%
+  left: 50%
+  +aProp(border-radius, 40)
+  transform: translate(-50%, -50%)
+  +mob
+    width: 64px
+    border-radius: 40px
+
+.article-block, .section-link
+  flex: 1
+  display: block
+  &__img
+    width: 100%
+    aspect-ratio: 60/34
+    +aProp(border-radius, 12)
+    position: relative
+    +mob
+      border-radius: 12px
+    
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      +aProp(border-radius, 12)
+      +mob
+        border-radius: 12px
+      +no-drag
+  &__img + &__desc
+    +aProp(margin-top, 16)
+    +mob
+      margin-top: 10px
+  &__date
+    color: $DarkGray
+    +aProp(margin-top, 16)
+    +mob
+      margin-top: 16px
+  &__img, &__desc, &__date
+    transition: transform 0.4s ease
+  &:hover &__img, &:hover &__desc, &:hover &__date
+    +dsk
+      transform: translateY(aCalc(-6))
+  &:hover &__desc
+    +dsk
+      color: $LightGreen
+
+.article-block
+  border-top: 1px solid #F1F1F1
+  border-right: 1px solid #F1F1F1
+  display: grid 
+  justify-content: center
+  align-items: center
+  padding: aCalc(40)
+  +r($sm)
+    border-top: none
+    padding: 0
+    display: flex
+  &__wrapper 
+    width: aCalc(393)
+    padding: 0
+    +r($sm)
+      width: 100%
+  &__img 
+    width: 100%
+    height: aCalc(240)
+    +r($sm)
+      height: 210px
+    +aProp(border-radius, 4)
+    +r($sm)
+      border-radius: 4px
+    img 
+      +aProp(border-radius, 4)
+      +r($sm)
+        border-radius: 4px
+  &__desc
+    .n-button2 
+      margin-bottom: aCalc(8)
+      opacity: 0.4
+      +r($sm)
+        display: none
+    .n-p2 
+      +r($sm)
+        margin-top: 16px
+  &:nth-child(-n + 4)
+    border-top: none
+  &:first-child
+    +r($sm)
+      padding-top: 0
+  &:nth-child(4n)
+    border-right: none
+  &._empty
+    width: aCalc(480)
+
+.section-link .section-link__img
+  aspect-ratio: 89/69
+
+.offer-link-square
+  position: relative
+  width: 100%
+  display: block
+  .offer-link-square__heading
+    position: absolute
+    +aProp(margin-left, 30)
+    +aProp(margin-top, 30)
+    left: 0
+    top: 0
+    color: $Beige
+    font-weight: 600
+    +mob
+      margin-left: 16px
+      margin-top: 16px
+      z-index: 1
+    &.offer-link-square__heading_white
+      color: #fff
+  .offer-link-square__description
+    color: #fff
+    position: absolute
+    +aProp(margin-left, 30)
+    +aProp(margin-bottom, 30)
+    left: 0
+    bottom: 0
+    max-width: 59.166666%
+    z-index: 1
+    +mob
+      margin-left: 16px
+      margin-bottom: 16px
+      max-width: 70.6666%
+  .offer-link-square__image
+    width: 100%
+    height: auto
+    aspect-ratio: 6/5
+    +aProp(border-radius, 12)
+    +mob
+      aspect-ratio: 300/286
+      border-radius: 12px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: inherit
+      +no-drag
+      
+  .offer-link-square__button
+    position: absolute
+    +aProp(margin-right, 30)
+    +aProp(margin-bottom, 30)
+    right: 0
+    bottom: 0
+    z-index: 1
+    +mob
+      margin-right: 16px
+      margin-bottom: 16px
+    .slide-button_arrow
+      +aProp(width, 56)
+      +mob
+        width: 48px
+      span
+        svg
+  &:hover
+    .offer-link-square__button .slide-button_arrow span
+      transform: translateY(-100%)
+
+.interline-banner
+  width: 100%
+  display: block
+  .interline-banner__inner
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $Beige
+    padding: aCalc(30) 0
+    +aProp(border-radius, 12)
+    text-align: center
+    +mob
+      border-radius: 12px
+      padding: 24px 20px
+    & > span
+      @extend .buttonM
+      white-space: normal
+      +mob
+        line-height: 20px
+    svg
+      display: inline-block
+      +aProp(height, 32)
+      width: auto
+      aspect-ratio: 1
+      +aProp(margin-left, 16)
+      +aProp(margin-right, 10)
+      vertical-align: middle
+      line-height: inherit
+      +mob
+        height: 20px
+        margin-left: 10px
+        margin-right: 3px
+
+.page__container_catalog  .interline-banner
+  margin: aCalc(80) 0
+
+.pagination
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: fit-content
+  margin: 0 auto
+  +aProp(margin-top, 60)
+  +mob
+    margin: 30px auto
+  .progress-bar
+    +aProp(width, 268)
+    height: 2px
+    background: #e7e7e7
+    margin: aCalc(16) 0 aCalc(32)
+    +mob
+      margin: 16px 0 30px
+      width: 268px
+    .progress
+      background: $LightGreen
+      height: 2px
+
+img.full-width-img
+  width: 100%
+  height: auto
+  &.full-width-img_rounded
+    +aProp(border-radius, 12)
+    +mob
+      border-radius: 12px
+
+.four-column-grid, .n-column-grid
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  +aProp(row-gap, 80)
+  +aProp(column-gap, 20)
+  +mob
+    grid-template-columns: 1fr
+    gap: 40px
+.n-column-grid
+  --columns: 4
+  grid-template-columns: repeat(var(--columns), 1fr)
+
+.four-column-grid
+  border-top: 1px solid #F1F1F1
+  border-bottom: 1px solid #F1F1F1
+  +aProp(row-gap, 0)
+  +aProp(column-gap, 0)
+  +r($sm)
+    display: flex
+    flex-direction: column
+    gap: 40px
+    border: none
+    padding: 0 12px
+
+.catalog-sections-grid
+  display: flex
+  +aProp(row-gap, 80)
+  +aProp(column-gap, 20)
+  +mob
+    display: grid
+    grid-template-columns: 1fr 1fr
+    row-gap: 20px
+    column-gap: 8px
+
+  .section-link
+    .section-link__img
+      +dsk
+        aspect-ratio: unset
+        height: 370px

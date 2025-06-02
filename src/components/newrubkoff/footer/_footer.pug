@@ -1,0 +1,69 @@
+//- .n-footer(new-footer)
+
+.n-footer
+  .n-footer__top 
+    ul._mobile
+      li.n-footer__open
+        .n-h6 Completed projects
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L12 14L16 10" stroke="white"/>
+        </svg>
+        - var val = 0;  
+        while val < 5
+          each title in ['All projects', 'Houses for sale', 'Houses from laminated timber', 'Objects on map', 'Open Village']
+            li 
+              a(hre="#")= title 
+            - val++
+    ul._mobile
+      li.n-footer__open
+        .n-h6 house projects
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L12 14L16 10" stroke="white"/>
+        </svg>
+        - var val = 0;  
+        while val < 5
+          each title in ['All projects', 'Houses for sale ', 'Houses from laminated timber', 'Houses for sale', 'Combined houses']
+            li 
+              a(hre="#")= title 
+            - val++
+    ul._mobile
+      li.n-footer__open
+        .n-h6 Services
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L12 14L16 10" stroke="white"/>
+        </svg>
+        - var val = 0;  
+        while val < 7
+          each title in ['Construction', 'Custom design', 'Site selection', 'Engineering and Electricity', 'Finishing White box', 'Interior design', 'Furnishings']
+            li 
+              a(hre="#")= title 
+            - val++
+    ul._mobile
+      li.n-footer__open
+        .n-h6 About company
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L12 14L16 10" stroke="white"/>
+        </svg>
+        - var val = 0;  
+        while val < 7
+          each title in ['About company', 'Team', 'Contacts', 'Partner villages', 'Partners', 'Interior design', 'Furnishings']
+            li 
+              a(hre="#")= title 
+            - val++
+    ul._icons-list 
+      li.n-footer__open._mob-hide
+        .n-h6 Social media
+        - var val = 0;  
+        - var imgSrc = ["/img/newrubkoff/n-yt.png", "/img/newrubkoff/n-wk.png", "/img/newrubkoff/n-tg.png", "/img/newrubkoff/n-tg.png", "/img/newrubkoff/n-tg.png"]
+        while val < 4
+          each title in ['Youtube', 'Vkontakte', 'Telegram', 'Dzen']
+            li._icon
+              img(src=imgSrc[val] alt="")
+              a(hre="#")= title 
+            - val++
+  .n-footer__bottom 
+    .n-footer__bottom-left 
+      .n-h6 © 2023-2024. Rubkoff
+      .n-h6 Privacy Policy
+    .n-footer__bottom-right 
+      .n-h6  Website creation - Studio NetLab

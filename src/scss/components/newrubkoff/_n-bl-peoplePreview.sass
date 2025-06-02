@@ -1,0 +1,65 @@
+.nbl-peoplePreview
+  position: sticky
+  top: aCalc(80)
+  margin-bottom: aCalc(40)
+  left: 0
+  +r($sm) 
+    margin-bottom: unset
+    padding: 0
+  .n-h2 
+    margin-bottom: aCalc(24)
+    +r($sm)
+      margin-bottom: 24px
+    &._mob
+      display: none 
+      +r($sm)
+        display: block
+    &._desk
+      display: block 
+      +r($sm)
+        display: none
+  img, video 
+    margin-bottom: aCalc(16)
+    width: aCalc(290)
+    height: aCalc(392)
+    object-fit: cover
+    +r($sm)
+      width: 126px
+      height: 171px
+      border-radius: 4px
+      margin-bottom: 0
+  .n-h3
+    margin-bottom: aCalc(4)
+    +r($sm)
+      margin-bottom: 0
+  .n-p2
+    margin-bottom: aCalc(24)
+    +r($sm)
+      margin-bottom: 40px
+  &__main 
+    +r($sm)
+      display: flex
+      justify-content: space-between
+      gap: 16px
+      margin-bottom: 16px
+    img 
+      order: 2
+    div.nbl-peoplePreview__main-info
+      +r($sm)
+        width: 50%
+        order: 1
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      .n-p2
+        +r($sm)
+          margin-bottom: 0
+          padding-bottom: 16px
+          border-bottom: 1px solid #000000
+  .n-button-green
+    width: 100%
+    justify-content: center
+    svg 
+      +r($sm)
+        width: 20px
+        height: 20px

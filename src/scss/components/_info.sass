@@ -1,0 +1,388 @@
+.work-stages
+  display: grid
+  grid-template-columns: 1fr 1fr
+  +aProp(gap, 40)
+  +mob
+    grid-template-columns: unset
+    grid-template-rows: auto 370px
+    gap: 10px
+  .work-stages__list
+    +aProp(height, 600)
+    +aProp(padding-right, 40)
+
+    border-right: 1px solid #000
+    +hideScroll
+    +mob
+      height: auto
+      display: flex
+      flex-wrap: nowrap
+      overflow: scroll
+      gap: 4px
+      margin: 0 -16px
+      border-right: none
+      padding: 0 16px
+      white-space: nowrap
+
+  .work-stages__item
+    +dsk
+      width: 100%
+      display: flex
+      justify-content: space-between
+      padding: 16px 0
+      border-bottom: 1px solid #000
+      background-color: unset
+      cursor: pointer
+      align-items: center
+    +mob
+      background-color: $WhiteGray
+      padding: 12px
+      border-radius: 12px
+      transition: background-color 0.3s
+    .h4
+      +mob
+        font-size: 12px
+        line-height: 16px
+  .work-stages__arrow
+    opacity: 0
+    transform: translateX(-75%)
+    transition: transform 0.3s, opacity 0.3s
+    +mob
+      display: none
+    svg
+  .work-stages__signs-ctr
+
+    width: 100%
+    height: 100%
+    position: relative
+    background-color: $Beige
+    +aProp(border-radius, 12)
+    +mob
+      border-radius: 12px
+  .work-stages__sign
+    position: absolute
+    +wah(100%)
+    border-radius: inherit
+    top: 0
+    left: 0
+    width: 100%
+    +aProp(height, 600)
+    text-align: center
+    font-weight: 600
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $Beige
+    +aProp(gap, 24)
+    padding: 0 aCalc(75)
+    opacity: 0
+    color: $baseTextColor
+    z-index: 1
+    transform: scale(0.9)
+    transition: transform 0.3s 0.02s, z-index 0s
+    +mob
+      border-radius: 12px
+      padding: 30px 44px
+      height: 100%
+      gap: 42px
+      justify-content: flex-start
+    img
+      +aProp(width, 124)
+      +mob
+        width: 54px
+  .work-stages__item._active
+    +dsk
+      color: $LightGreen
+    +mob
+      background-color: $LightGreen
+      color: #fff
+    .work-stages__arrow
+      opacity: 1
+      transform: translateX(0)
+
+  .work-stages__sign._active
+    opacity: 1
+    z-index: 3
+    transform: scale(1)
+
+.quote-banner
+  display: grid
+  grid-template-rows: repeat(3, max-content)
+  grid-template-columns: 41% 59%
+  color: #fff
+  gap: 0
+  align-items: flex-start
+  +aProp(border-radius, 12)
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  +mob
+    grid-template: unset
+    border-radius: 12px
+    padding: 16px 0 0 16px
+    grid-template-rows: repeat(3, max-content)
+  &__photo
+    grid-area: 1/1/-1/2
+    align-self: flex-end
+    justify-self: flex-end
+    width: 100%
+    +mob
+      grid-area: -2/1/-1/2
+      border-bottom-right-radius: inherit
+      padding-left: 39px
+    img
+      width: 100%
+      height: auto
+      border-bottom-right-radius: inherit
+
+  &__pos
+    grid-area: 1/2/2/3
+    margin-top: 100px
+    padding-right: 156px
+    padding-left: 185px
+    height: max-content
+    margin-bottom: 60px
+    +mob
+      margin: 0
+      padding: 0
+      margin-bottom: 16px
+      grid-column: 1/2
+      grid-row: 1/2
+
+  &__text
+    grid-area: 2/2/3/3
+    padding-right: 156px
+    padding-left: 145px
+    margin-left: 185px
+    position: relative
+    font-weight: 600
+    height: max-content
+    margin-bottom: 54px
+
+    +mob
+      margin: 0
+      padding: 0
+      grid-column: 1/2
+      grid-row: 2/3
+    svg
+      position: absolute
+      top: 0
+      left: 0
+      +mob
+        display: none
+
+  &__name
+    height: max-content
+    grid-area: 3/2/4/3
+    padding-left: 185px
+    padding-right: 156px
+    font-weight: 600
+    color: $Beige
+    margin-bottom: 100px
+    +mob
+      position: absolute
+      margin: 0
+      padding: 0
+      grid-area: -2/1/-1/2
+      align-self: flex-end
+      bottom: 0
+      margin-bottom: 40px
+
+.offers-table
+  border-top: 1px solid $GrayBruh
+  border-bottom: 1px solid $GrayBruh
+  &__icon
+    +wah(aCalc(64))
+    +mob
+      +wah(56px)
+      grid-row: 1/-1
+
+    img
+      +wah(100%)
+      object-fit: contain
+
+  &__item
+    display: grid
+    grid-template-columns: 24.1848% 27.7174% 48.0978%
+    padding: aCalc(16) aCalc(24)
+    align-items: center
+    justify-items: start
+    +mob
+      padding: 16px
+      grid-template-columns: auto 1fr
+      grid-template-rows: auto auto
+      column-gap: 16px
+      row-gap: 6px
+  &__item  + &__item
+    border-top: 1px solid $GrayBruh
+
+.auction-footer
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  .auction-footer__title
+    text-align: center
+    
+  .auction-footer__desc
+    display: flex
+    color: #7B7B7B
+    align-items: center
+    justify-content: center
+    width: max-content
+    white-space: nowrap
+    +aProp(margin-top, 16)
+    +mob
+      margin-top: 8px
+    .h5
+    
+    svg
+      +aProp(margin-left, 10)
+      +aProp(height, 24)
+      width: auto
+      +mob
+        margin-left: 8px
+        height: 24px
+
+  .auction-footer__btn
+    +aProp(margin-top, 40)
+    +mob
+      margin-top: 32px
+    button.button_medium.slide-button
+      span
+
+.auction-header
+  position: relative
+  +aProp(--nav, 128)
+  height: calc( 100vh - var(--nav) )
+  width: 100%
+  color: #fff
+  +mob
+    height: 466px
+  &__background
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 0
+    img, video, .project-slider
+      display: block
+      +wah(100%)
+      object-fit: cover
+    .project-slider 
+      .project-slider__slider
+        height: 100%
+  &__body
+    position: absolute
+
+    +aProp(--offset, 50)
+    padding: 0 aCalc(40)
+    margin-top: calc(var(--header-height) + var(--offset))
+    z-index: 2
+    width: max-content
+    +mob
+      margin: 0
+      display: flex
+      position: relative
+      flex-direction: column
+      height: 100%
+      width: 100%
+      padding: 16px 
+      padding-bottom: 34px
+      
+      
+
+  &__bottom
+    +aProp(margin-top, 40)
+    display: flex
+    flex-wrap: nowrap
+    align-items: flex-start
+    +aProp(gap, 8)
+  
+    +mob
+      margin-top: auto
+      width: 100%
+      gap: 8px
+    button, .button, .button_medium
+      +mob
+        flex: 1
+
+  &__price
+    +aProp(border-radius, 12)
+    background: rgba(0, 0, 0, 0.25)
+    backdrop-filter: blur(3px)
+    width: max-content
+    padding: aCalc(8) aCalc(16)
+    +mob
+      flex: 0 0 auto
+      border-radius: 12px
+      padding: 8px 16px
+      display: none
+    .h6
+      display: block
+      +aProp(line-height, 22)
+      +mob
+        line-height: 22px
+    span
+      display: block
+      font-weight: 600
+      +aProp(margin-top, 2)
+      +aProp(font-size, 18)
+      +aProp(line-height, 24)
+      +mob
+        margin-top: 2px
+        font-size: 18px
+        line-height: 24px
+  &__tags
+    display: flex
+    +aProp(width, 610)
+    flex-wrap: wrap
+    +aProp(gap, 6)
+    +aProp(margin-top, 30)
+    +mob
+      display: none
+  &__tag
+    padding: aCalc(10) aCalc(14)
+    +aProp(border-radius, 8)
+    background: rgba(0, 0, 0, 0.25)
+    backdrop-filter: blur(3px)
+    width: max-content
+    white-space: nowrap
+    +mob
+       
+  &__title
+
+.thanks-block
+  +aProp(--footer-p-top, 200)
+  padding-top: var(--footer-p-top)
+  height: calc(100vh - var(--footer-p-top))
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  +aProp(gap, 40)
+  +mob
+    padding-top: 60px
+    height: auto
+    gap: 0
+  img
+    +aProp(width, 132)
+    height: auto
+    +aProp(margin-bottom, 20)
+    +mob
+      width: 96px
+      margin-bottom: 30px
+  h1 + p, p + p
+    +mob
+      margin-top: 16px
+       
+  .thanks-block__buttons
+    display: flex
+    +aProp(gap, 16)
+    +mob
+      width: 100%
+      flex-direction: column
+      gap: 10px
+      margin-top: 30px
+      .slide-button
+        width: 100%

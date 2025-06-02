@@ -1,0 +1,33 @@
+
+.nbl-imgVideo
+  height: aCalc(1028)
+  border-radius: aCalc(4)
+  overflow: hidden
+  margin-bottom: aCalc(40)
+  +r($sm)
+    height: 352px
+    margin-bottom: 60px
+  &._marginMob
+    +r($sm)
+      margin: 60px 0
+  img, video 
+    object-fit: cover
+    height: 100%
+    width: 100%
+  &._mixed 
+    width: aCalc(1367)
+    height: unset
+    +r($sm)
+      width: unset
+    img, video 
+      height: aCalc(900)
+      +r($sm)
+    .nbl-imgVideo__wrapper 
+      display: flex
+      gap: aCalc(2)
+      img, video 
+        width: aCalc(683)
+        object-fit: cover
+        +r($sm)
+          width: 50%
+          height: 240px

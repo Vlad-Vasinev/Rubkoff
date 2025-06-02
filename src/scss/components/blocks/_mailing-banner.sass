@@ -1,0 +1,78 @@
+.mailing-banner
+  position: relative
+  border-radius: aCalc(12)
+  min-height: aCalc(324)
+  +mob
+    min-height: unset
+    border-radius: 0
+    
+  .mailing-banner__bg
+    border-radius: inherit
+    +wah(100%)
+    position: absolute
+    z-index: 0
+    video, img
+      border-radius: inherit
+      +wah(100%)
+      object-fit: cover
+
+  .mailing-banner__tag
+    position: relative
+    z-index: 1
+
+    +dsk
+      top: 0
+      left: 0
+      margin: aCalc(30)  
+      position: absolute
+    +mob
+      padding: 16px
+
+  .mailing-banner__form
+    width: aCalc(595)
+    padding: aCalc(30) 0 
+    margin: 0 auto
+    position: relative
+    z-index: 1
+    +mob
+      width: 100%
+      margin: 0
+      padding: 16px
+      padding-top: 0
+    .h6
+      margin-bottom: 9px
+    .h2
+      margin-bottom: aCalc(42)
+      +mob
+        margin-bottom: 34px
+    .inputs-container-inline
+      align-items: stretch
+      gap: aCalc(8)
+      +mob
+        gap: 8px
+    form
+    .ui-input
+      margin: 0
+      width: 100%
+      height: auto
+      &__error
+        margin-top: aCalc(4)
+        +mob
+          margin-top: 4px
+      input
+        height: 100%
+    button.slide-button
+      margin: 0
+      & > span:nth-child(1)
+        +mob
+          padding: 18px 
+        & > span
+          +mob
+            display: none
+      svg
+        +dsk
+          display: none
+    .form-policy
+      margin-top: aCalc(16)
+      +mob
+        margin-top: 16px

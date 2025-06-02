@@ -1,0 +1,67 @@
+
+.inside-consult
+
+  &__wrapper 
+    position: relative
+  &__bg
+    img 
+      left: 0
+      right: 0
+      width: 100vw
+      height: aCalc(932)
+      width: 100%
+      object-fit: cover
+      +r($sm)
+        height: 578px
+  &__content 
+    position: absolute
+    top: 0
+    height: aCalc(932)
+    z-index: 10
+    padding: aCalc(40)
+    display: flex
+    align-items: center
+    gap: aCalc(617)
+    +r($sm)
+      height: 578px
+      flex-direction: column
+      padding: 40px 16px
+    &-info 
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 100%
+      max-width: aCalc(446)
+      +r($sm)
+        height: 498px
+        flex-shrink: 0
+        max-width: unset
+      h1, .h6, .h3, .h1
+        color: $White
+      .h3 
+        margin-bottom: aCalc(4)
+        +r($sm)
+          margin-bottom: 4px
+    &-form 
+      max-width: aCalc(545)
+      +r($sm)
+        display: none
+      &_mob 
+        +r($sm)
+          display: block
+  .independent-form
+    border-radius: aCalc(6)
+    padding: aCalc(60)
+    +r($sm)
+      padding: 40px 16px
+      border-radius: 0
+    &.independent-form_mob
+      display: none
+      +r($sm)
+        display: block
+        padding: 40px 16px
+        border-radius: 0
+    .form-policy
+      text-align: left !important
+      a
+        text-decoration: none

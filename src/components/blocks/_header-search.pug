@@ -1,0 +1,23 @@
+
+.header-search.fixed-block
+  .header-search__field
+    input(type="text" placeholder="Search the site")
+    .close-button.close-button-text
+      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.5" width="24" height="24" rx="12" fill="#C1C1C1"/>
+        <path d="M8 17L16 9M8 9L16 17" stroke="white" stroke-width="1.5"/>
+      </svg>
+    .n-button1(data-search-close) close
+      
+  .header-search__suggestions
+    .header-search__suggestions-container
+template.header-search-item-tpl
+  a.product-card
+    .product-card__img
+      img(tpl-image src='img/galleryItem1.png')
+    .product-card__description
+      .product-card__title
+        .n-h4(tpl-name) Project П-94
+      .product-card__chars-ctr
+        .product-card__char
+          .n-h6(tpl-area)

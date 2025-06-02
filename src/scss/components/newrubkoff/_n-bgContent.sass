@@ -1,0 +1,139 @@
+
+.bg-ContentSlider
+  position: relative
+  --currentTime: 0%
+  .project-slider__pagination
+    +r($sm)
+      bottom: 12px
+  .swiper-pagination-bullet
+    padding: 0
+    span 
+      &::before 
+        display: none !important
+  .swiper-pagination-bullet
+    max-width: aCalc(6)
+    height: aCalc(6)
+    background-color: rgba(255, 255, 255, 0.4)
+    border-radius: 50%
+    +r($sm)
+      height: 4px
+      max-width: 4px
+  .swiper-pagination-bullet.swiper-pagination-bullet-active
+    background-color: rgba(255, 255, 255, 0.4)
+    max-width: aCalc(80)
+    border-radius: aCalc(2)
+
+    position: relative
+    &::before 
+      position: absolute
+      content: ""
+      left: 0
+      top: 0
+      border-radius: aCalc(4)
+      height: 100%
+      transition: width cubic-bezier(0.490, 0.490, 0.590, 0.690) .2s
+      width: var(--currentTime)
+      background-color: rgba(255, 255, 255, 1)
+      z-index: 100
+
+    +r($sm)
+      max-width: 60px
+      border-radius: 2px  
+    span 
+      &::before 
+        display: none !important
+  .project-slider__pagination .swiper-pagination-bullet
+    height: aCalc(6)
+    +r($sm)
+      height: 4px
+  .project-slider__pagination
+    padding-left: 0
+    left: 26.71875%
+    +r($sm)
+      padding-bottom: 0
+      left: 12px
+
+.n-bgContent
+  width: 100%
+  height: 100vh
+  position: relative
+  +r($sm)
+    height: 630px
+  .breadcrumb
+    position: absolute
+    top: aCalc(92)
+    left: aCalc(40)
+    z-index: 90
+    color: $White
+  img, video
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__cover 
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: 0.3 
+    background-color: #000000
+    &._img 
+      opacity: unset 
+      background-color: unset
+      +r($sm)
+        height: 40%
+    &._img._double
+      display: none
+      +r($sm)
+        display: block
+        top: unset 
+        transform: rotate(180deg)
+        bottom: 0
+        height: 40%
+  .nbl-timer 
+    position: absolute
+    z-index: 2
+    left: aCalc(416)
+    top: 50%
+    transform: translateY(-50%)
+    +r($sm)
+      left: 0
+      right: 0
+      margin: 0 auto
+      gap: 24px
+  .n-galleryProjectBtn
+    position: absolute
+    z-index: 9 
+    left: 26.71875%
+    top: 13vh
+    width: 59.5416666667vw
+    &._main
+      top: 10vh
+      +r($sm)
+        top: auto 
+    +r($sm)
+      width: auto
+      height: 100%
+      top: auto 
+      bottom: 40px
+      left: 12px
+      right: 12px
+      justify-content: flex-end
+      transform: translateY(0)
+    .n-galleryProjectBtn__bottom 
+      .n-button-green
+        +r($sm)
+          margin-top: 16px
+          padding: 6px 11px 6px 6px
+          border-radius: 4px
+        .n-button1
+          +r($sm)
+            font-size: 12px
+    .n-h1
+      color: #ffffff
+    .n-button-green
+      border: none
+      &._white
+        background-color: #ffffff
+        .n-button1
+          color: #000000

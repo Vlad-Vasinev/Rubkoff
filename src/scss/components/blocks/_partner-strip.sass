@@ -1,0 +1,65 @@
+.partner-strip
+  display: flex
+  border-top: 1px solid #E5E5E5
+  border-bottom: 1px solid #E5E5E5
+  background-color: #E5E5E5
+  gap: 1px
+  +mob
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: 1fr
+  .partner-strip__item
+    box-sizing: border-box
+    flex: 1
+    align-items: center
+    justify-content: center
+    display: flex
+    +aProp(height, 320)
+    background-color: #fff
+    +mob
+      width: 100%
+      height: auto
+      aspect-ratio: 1
+    img
+      width: auto
+      +aProp(height, 100)
+      +mob
+        height: 100px
+  &:not(&_slider) &__item
+    &:nth-child(odd):last-child
+      +mob
+        height: 100%
+        aspect-ratio: unset
+        grid-column: 1/-1
+  &_slider
+    background-color: unset
+    gap: 0
+    display: block
+    border-bottom: none
+    
+  &_slider .swiper-wrapper
+  &_slider &__item
+    flex: 0 0 auto
+    width: 16.667%
+    +mob
+      width: 50%
+  &_slider &__item + &__item
+    border-left: 1px solid #E5E5E5
+  &_slider .slider-pagination-navigation
+    display: grid
+    grid-template-columns: auto auto auto
+    border-top: inherit
+    margin: 0
+    padding: 0
+    padding-top: aCalc(24)
+    +mob
+      padding-top: 16px
+    .swiper-pagination
+      
+      gap: 12px
+      margin: 0 aCalc(32)
+      +mob
+        margin: 0 16px
+      .swiper-pagination-bullet
+        margin: 0
+        flex: 0 1 auto

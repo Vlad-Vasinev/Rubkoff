@@ -1,0 +1,102 @@
+
+.two-side-block
+  display: grid
+  grid-template-columns: auto auto
+  +mob
+    display: flex
+    flex-direction: column
+    width: 100%
+    position: relative
+  .two-side-block__section
+    width: auto
+    
+  .two-side-block__image
+    +aProp(width, 1065)
+    +aProp(height, 750)
+    +aProp(border-radius, 12)
+    +mob
+      border-radius: 12px
+      width: 100%
+      height: 242px
+    img
+      border-radius: inherit
+      +cover-img
+  .two-side-block__section_text
+    align-self: center
+    justify-self: flex-start
+    +dsk
+      padding: 0 aCalc(175) 0 aCalc(155)
+    +mob
+      order: -1
+      margin-bottom: 32px
+    > * + * 
+      +dsk
+        margin-top: aCalc(24)
+      +mob
+        margin-top: 16px
+    button, .button
+      margin-top: aCalc(24)
+      +mob
+        margin-top: 24px
+         
+  .two-side-block__section_text:first-child
+    +dsk
+      padding: 0 aCalc(175) 0 aCalc(155)
+
+  .two-side-block__section_text:last-child
+    +dsk
+      padding: 0 aCalc(155) 0 aCalc(175)
+      
+  
+
+.page__container_project
+  .page__block
+    .two-side-slider
+      +dsk
+        +aProp(width, 910)
+        +aProp(height, 680)
+      
+    .two-side-block
+      .two-side-block__section_text
+        align-self: flex-start
+        justify-self: flex-start
+        padding: 0
+        
+      .two-side-block__section_text:first-child
+        +dsk
+          max-width: aCalc(290)
+          justify-self: flex-start
+          padding-right: aCalc(20)
+        +mob 
+          max-width: unset
+
+      .two-side-block__section_text:last-child
+        +dsk
+          justify-self: flex-end
+          padding-left: aCalc(20)
+
+.two-side-slider
+  +aProp(width, 1065)
+  +aProp(height, 750)
+  overflow: hidden
+  max-width: 100%
+  +aProp(border-radius, 12)
+  // -webkit-mask-image: -webkit-radial-gradient(white, black)
+  @include gradient-safari-mixin
+  +mob
+    
+    width: auto
+    max-width: unset
+    border-radius: 0
+    margin: 0 -16px
+    height: auto
+    aspect-ratio: 375/264
+    
+
+  .two-side-slider__wrapper
+    +wah(100%)
+
+    .two-side-slider__slide
+      +wah(100%)
+      img
+        +cover-img

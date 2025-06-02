@@ -1,0 +1,29 @@
+
+.nbl-text, .nbl-textTruncate
+  display: flex
+  gap: aCalc(40)
+  margin-bottom: aCalc(40)
+  +r($sm)
+    flex-direction: column
+    gap: 16px
+    margin-bottom: -36px
+  &._alignCenter 
+    align-items: center
+    +r($sm)
+      align-items: flex-start
+      margin-bottom: 24px
+      gap: 0
+  .n-h1
+    width: aCalc(433)
+    color: #2E5E5E
+    +r($sm)
+      width: unset
+  .n-p1 
+    width: aCalc(954)
+    color: #0E0E0E
+    padding-right: aCalc(80)
+    +r($sm)
+      width: unset
+      padding-right: 0
+  .n-button1.read-more
+    height: max-content

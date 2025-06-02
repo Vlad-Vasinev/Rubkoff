@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the popular small dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>\u201cSmall dogs are popular in general because of their compact size, their cute looks, and their unique personalities,\u201d says Dr. Nell Ostermeier, D.V.M., integrative veterinarian and consultant with AKC Pet Insurance.</p>\n<p>\u201cThere are so many types and variations of small dogs. Some of the most common breeds we see in the U.S. are pugs, French bulldogs, Chihuahuas, Maltese, miniature poodles and pomeranians,\u201d Ostermeier adds.</p>\n"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best small breed dog to own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>When it comes to choosing the best small breed, it depends on what you\u2019re looking for in a canine companion.</p>\n<p>\u201cWe all have different lifestyles, preferences and temperaments,\u201d says Dr. Cheri Honnas, D.V.M., veterinary advisor to <a href=\"https://bonevoyagedogrescue.com/\">Bone Voyage Dog Rescue</a>, a non-profit that rescues dogs from Mexico and finds them homes in the U.S. and Canada.</p>\n<p>\u201cThe key is to identify a breed that aligns with your lifestyle and resonates with your personality,\u201d Honnas adds.</p>\n<p>Most dog experts and veterinarians recommend you ask yourself the following questions before choosing a particular breed:</p>\n<ul>\n<li>What is the main reason you want to add a dog to your life?</li>\n<li>What is your experience with dogs?</li>\n<li>What is your lifestyle like? Are you active or more sedentary?</li>\n<li>Do you have other people living with you? Any children? Any other animals?</li>\n<li>Do you live in an apartment or a house with a big backyard?</li>\n<li>Are you looking for a high-energy breed or a relaxed dog?</li>\n<li>What level of grooming do you want to commit to?</li>\n<li>What is your budget for veterinary care?</li>\n</ul>\n<p>It\u2019s also important to research what the dog was originally bred to do, says Stefanie Strackbein, owner of What Dogs Want Academy and a certified family dog mediator based in Phoenix, Arizona.</p>\n<p>\u201cNot every Dachshund will see every garden, flower pot and bed cover as the perfect place to dig, but do not be surprised if they do (because Dachshunds&#8217; original job was to\u00a0hunt badgers by crawling into their burrows),\u201d Strackbein says.</p>\n"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most gentle small dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Whether your dog is gentle will depend on temperament, but don\u2019t rule out the importance of socialization, training and the amount of affection and interaction the dog receives, Hauser says.</p>\n<p>That being said, there are some dogs that are generally recognized as being more gentle and affectionate, including the Maltese and pugs.</p>\n<p>Again, it\u2019s important to do your homework, Strackbein says.</p>\n<p>\u201cToy dogs were bred to be attentive and gentle with their people but they can become possessive and be less gentle with other people or animals,\u201d she adds.</p>\n"
+      }
+    }
+  ]
+}

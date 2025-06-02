@@ -1,0 +1,60 @@
+
+
+.services
+  &__wrapper 
+    display: grid 
+    grid-template-columns: repeat(4, aCalc(445))
+    gap: aCalc(20)
+    +r($sm)
+      gap: 0
+      display: flex
+  &__item 
+    max-width: aCalc(445)
+    &:hover 
+      .slide-button-inner
+        & > span
+          transform: translateY(-100%)
+          &:nth-child(2)
+            position: absolute
+      .button_medium.slide-button
+        transform: translateY(0)
+    +r($sm)
+      max-width: 326px
+    .button_medium.slide-button
+      transform: translateY(120%)
+      transition: transform .3s
+  &__content 
+    margin-bottom: aCalc(24)
+    +r($sm)
+      margin-bottom: 24px
+    img, video 
+      width: aCalc(200)
+      height: aCalc(200)
+      object-fit: cover
+      +r($sm)
+        width: 135px
+        height: 135px
+  &__info
+    overflow: hidden
+    .h3 
+      padding-bottom: aCalc(12)
+      border-bottom: 1px solid $WhiteGray
+      margin-bottom: aCalc(24)
+      +r($sm)
+        margin-bottom: 24px
+    .h6 
+      max-width: aCalc(290)
+      margin-bottom: aCalc(48)
+      +r($sm)
+        max-width: 290px
+        margin-bottom: 32px
+    .button_medium.slide-button
+      max-height: aCalc(52)
+      +r($sm)
+        max-height: 38px
+      span 
+        padding: aCalc(14) aCalc(24)
+        max-height: aCalc(52)
+        +r($sm)
+          padding: 7px 24px
+          max-height: 38px

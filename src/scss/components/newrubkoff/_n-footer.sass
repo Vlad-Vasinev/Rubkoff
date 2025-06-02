@@ -1,0 +1,119 @@
+//- .n-footer(new-footer)
+
+.n-footer
+  height: 100vh
+  background-color: #0A0A0A
+  padding: aCalc(420) aCalc(40) aCalc(40) aCalc(40)
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  +r($sm)
+    padding: 0 0 20px 0
+    justify-content: flex-start
+    gap: 67px
+    height: auto
+  &__top 
+    display: grid 
+    gap: aCalc(20)
+    grid-template-columns: aCalc(453) aCalc(437) auto auto auto
+    +r($sm)
+      gap: 0
+      display: flex
+      flex-direction: column
+    ul 
+      a 
+        cursor: pointer
+        border-bottom: 1px solid transparent
+        transition: border-color .3s
+        &:hover
+          border-bottom: 1px solid #ffffff
+      &._icons-list 
+        +r($sm)
+          display: grid
+          margin: 45px 12px 0
+          gap: 8px
+          grid-template-columns: 1fr 1fr
+      .n-footer__open .n-h6
+        color: #7B7B7B
+        text-transform: uppercase
+      li:first-child 
+        margin-bottom: aCalc(40)
+        &._mob-hide
+          +r($sm)
+            display: none
+      li 
+        margin-bottom: aCalc(8)
+        &._icon
+          display: flex
+          align-items: center
+          gap: aCalc(12)
+          +r($sm)
+            gap: 12px
+          img, svg 
+            width: aCalc(20)
+            height: aCalc(20)
+            +r($sm)
+              width: 20px
+              height: 20px
+      &._mobile 
+        +r($sm)
+          max-height: 52px
+          transition: max-height 0.25s 
+          overflow: hidden
+          padding: 0
+          border-bottom: 1px solid #1E1E1E
+        li:first-child 
+          svg
+            display: none 
+            transition: transform .3s
+            +r($sm)
+              width: 24px
+              height: 24px
+              display: block
+              transform: rotate(-90deg)
+            &.transform 
+              transform: rotate(0deg)
+          +r($sm)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 0
+            padding: 14px 12px
+          .n-h6 
+            color: #7B7B7B
+            text-transform: uppercase
+            +r($sm)
+              color: #ffffff
+        li 
+          +r($sm)
+            padding: 0 12px
+            margin-bottom: 12px
+      &._active
+        max-height: 1000px
+        transition: max-height 0.5s ease-in-out
+  &__bottom 
+    display: flex
+    justify-content: space-between
+    +r($sm)
+      flex-direction: column
+      gap: 8px
+      padding: 0 12px
+    .n-h6 
+      color: #ffffff
+      text-transform: uppercase
+  &__bottom-left 
+    display: flex
+    gap: aCalc(38)
+    +r($sm)
+      flex-direction: column
+      gap: 8px
+    .n-h6:first-child
+      position: relative
+      &::after 
+        position: absolute
+        content: "|"
+        opacity: 0.4
+        right: aCalc(-23)
+        +r($sm)
+          display: none

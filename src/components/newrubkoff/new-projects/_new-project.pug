@@ -1,0 +1,78 @@
+block vars 
+  - var breadcrumbText = ["Main", "houses made of laminated timber"]
+.page.n-news-page.no-section-mg 
+  .page__container
+    section.page__block.page__block_full-width._noMarginMob 
+      .n-bgContent()
+        include ../../blocks/_breadcrumb
+        .n-bgContent__cover._img 
+          img(src="/img/newrubkoff/content-cover.png" alt="") 
+        <picture>
+          <source media="(min-width:768px)" src="/img/newrubkoff/project-preview.jpg">
+          <source media="(max-width:768px)" srcset="/img/newrubkoff/project-preview-mob.jpg">
+          <img src="/img/newrubkoff/project-preview.jpg" alt="main image 1">
+        </picture>
+        .n-bgContent__cover._img._double 
+          img(src="/img/newrubkoff/content-cover.png" alt="") 
+        include ../blocks/_nbl-galleryBtn
+    section.page__block.page__block_full-w-mob._noMargin 
+
+      .blocks-border 
+        .block-border._project  
+          .block-border__preview
+            - var h2Text = "equipment"
+            - var imgSrc = "/img/newrubkoff/girl-1.jpg"
+            - var h3Text = "Victoria Chudnaya"
+            - var pText = "We work individually on each task, realizing all your wishes. Taking into account your needs, we are ready to make changes to each project."
+            include ../blocks/_nbl-peoplePreview
+          .block-border__main
+            .block-border__main-content
+              .project-contentBlock
+                a(data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg")
+                  img(src="/img/newrubkoff/plan-1.jpg" alt="")
+                ._label 
+                  .n-h6 1st floor plan
+              .project-contentBlock
+                a(data-fancybox="gallery" href="/img/newrubkoff/fancyb-2.jpg")
+                  img(src="/img/newrubkoff/plan-1.jpg" alt="")
+                ._label 
+                  .n-h6 2st floor plan
+              .project-contentBlock._text-separated 
+                .n-character
+                  .n-h6 Square:
+                  .n-h6 234 m²
+                .n-character
+                  .n-h6 Square:
+                  .n-h6 234 m²
+                .n-character
+                  .n-h6 Square:
+                  .n-h6 234 m²
+              include ../blocks/_nbl-productContentText
+
+      .n-projects.mobMargin 
+        .n-projects__el.borderNo 
+          - var nh2 = "Visualization 1"
+          - var np2 = "Working with a draft design is the process of determining the most successful, high-quality and functional solutions. Drawing up clear documentation allows you to reflect in detail each stage of work and ensure transparency in the process of project implementation."
+          include ../blocks/_nbl-cardSmall
+  
+      .blocks-border
+        .block-border._project
+          .block-border__preview
+            - var h2Text = "equipment"
+            - var imgSrc = "/img/newrubkoff/girl-2.jpg"
+            - var h3Text = "Dmitry Kiselev"
+            - var pText = "For those who know that career and family life are not mutually exclusive, the two-story cottage P173 is suitable."
+            include ../blocks/_nbl-peoplePreview
+          .block-border__main._noPadding._bottomBig
+            .block-border__main-content._noMargin
+              include ../blocks/_nbl-equipTable
+
+      .n-projects.mobMargin.mobBorder 
+        .n-projects__el
+          - var imgBl = "/img/newrubkoff/fancyb-1.jpg"
+          - var nh2 = "Visualization 2"
+          - var np2 = "Working with a draft design is the process of determining the most successful, high-quality and functional solutions. Drawing up clear documentation allows you to reflect in detail each stage of work and ensure transparency in the process of project implementation."
+          include ../blocks/_nbl-cardSmall
+          
+include ../blocks/_nbl-end
+include ../blocks/_nbl-bgContent

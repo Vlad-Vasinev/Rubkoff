@@ -1,0 +1,181 @@
+.fullscreen-slider
+  template#slide-tpl
+    .swiper-slide.fullscreen-slider__slide
+      .swiper-zoom-container(data-lazy)
+        img()
+  .fullscreen-slider__close(data-fs-close)
+    svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+      path(fill='#fff' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+      path(fill='#fff' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+  .fullscreen-slider__slider.swiper-container
+    .fullscreen-slider__wrapper.swiper-wrapper 
+  .slider-pagination-navigation
+    div.slider-navigation-prev.slide-button.slide-button_horizontal
+      span 
+        svg(xmlns='http://www.w3.org/2000/svg' width='20' height='21' fill='none' viewBox='0 0 20 21')
+          path(stroke='#161616' stroke-linecap='round' stroke-width='2' d='m14.17 2.76-8.34 7.5 8.34 7.5')
+    .swiper-pagination
+    div.slider-navigation-next.slide-button.slide-button_horizontal
+      span 
+        svg(xmlns='http://www.w3.org/2000/svg' width='20' height='21' fill='none' viewBox='0 0 20 21')
+          path(stroke='#161616' stroke-linecap='round' stroke-width='2' d='m14.17 2.76-8.34 7.5 8.34 7.5')
+.modal.modal_sheet(data-modal-name="mobile-contacts")
+  .modal__inner
+    .modal__top
+      span.h3 Contact us in your favorite messenger - let's discuss your project!
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+    .modal__body
+      .h4.contacts-sheet-btn
+        span Write to Telegram
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 20"><path fill="#4EABEA" d="M22.38.132 1.12 8.277c-1.45.58-1.442 1.384-.266 1.742l5.459 1.692L18.94 3.794c.597-.361 1.143-.167.694.229L9.404 13.198H9.4l.003.001-.377 5.59c.552 0 .795-.251 1.105-.548l2.65-2.561 5.515 4.047c1.017.556 1.747.27 2-.935l3.62-16.952C24.287.364 23.35-.305 22.38.132Z"/></svg>
+      .h4.contacts-sheet-btn
+        span НаWrite to WhatsApp
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#5CBE5A" fill-rule="evenodd" d="M11.997 0h.006C18.619 0 24 5.383 24 12c0 6.616-5.38 12-11.997 12-2.44 0-4.704-.726-6.601-1.983L.788 23.491l1.495-4.457A11.911 11.911 0 0 1 0 12C0 5.382 5.38 0 11.997 0Zm4.634 18.638c.916-.198 2.065-.876 2.355-1.694.29-.819.29-1.516.205-1.665-.068-.117-.228-.195-.467-.31l-.203-.1c-.353-.175-2.067-1.022-2.391-1.135-.318-.12-.621-.078-.861.261l-.137.192c-.29.407-.569.8-.8 1.05-.212.225-.557.254-.847.134a8.616 8.616 0 0 0-.108-.044c-.458-.185-1.475-.596-2.706-1.692-1.038-.924-1.743-2.074-1.947-2.42-.2-.345-.027-.548.132-.736l.01-.01c.102-.128.202-.234.302-.34.073-.077.145-.154.22-.24l.031-.036c.158-.18.251-.289.357-.514.12-.232.034-.472-.051-.65-.06-.123-.422-1.005-.734-1.762l-.345-.834c-.232-.556-.41-.577-.762-.592l-.032-.002c-.112-.005-.235-.012-.37-.012-.459 0-.937.135-1.227.43l-.031.033c-.37.377-1.196 1.216-1.196 2.888 0 1.676 1.19 3.298 1.41 3.598l.015.022.075.106c.449.65 2.637 3.82 5.9 5.17 2.757 1.144 3.576 1.037 4.203.904Z" clip-rule="evenodd"/></svg>
+
+.modal._form-modal(data-modal-name="form-modal")
+  .modal__inner
+    .modal__top
+      span.n-h2.form-request Discuss the project
+      span.h2.form-response Thank you for your application.
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+      .modal__top-row
+        a.n-button-green(rel='noopener nofollow' href='https://wa.me/79309498523?text=Здравствуйте! Номер моей заявки: 692457' onclick='ym(14640535,\'reachGoal\',\'proek-whats-app\', {URL: document.location.href}); return true;' target='_blank')
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.998 2H10.002C14.413 2 18 5.589 18 10C18 14.411 14.413 18 10.002 18C8.375 18 6.866 17.516 5.601 16.678L2.526 17.661L3.523 14.689C2.564 13.372 2 11.75 2 10C2 5.588 5.587 2 9.998 2ZM13.087 14.4252C13.698 14.2932 14.464 13.8412 14.657 13.2962C14.85 12.7502 14.85 12.2852 14.794 12.1862C14.7488 12.1077 14.6419 12.0562 14.4822 11.9793C14.4407 11.9593 14.3955 11.9376 14.347 11.9132C14.112 11.7962 12.969 11.2312 12.753 11.1562C12.541 11.0762 12.339 11.1042 12.179 11.3302C12.1486 11.3728 12.1182 11.4155 12.088 11.458C11.895 11.7294 11.7088 11.9913 11.554 12.1582C11.413 12.3082 11.183 12.3272 10.99 12.2472C10.969 12.2384 10.9448 12.2287 10.9178 12.2178C10.6122 12.0944 9.93444 11.8206 9.114 11.0902C8.422 10.4742 7.952 9.7072 7.816 9.4772C7.68247 9.24647 7.79765 9.11118 7.90409 8.98614C7.90606 8.98382 7.90803 8.98151 7.91 8.9792C7.97863 8.89429 8.04523 8.82358 8.11216 8.75252C8.16031 8.7014 8.20863 8.6501 8.258 8.5932C8.26533 8.58475 8.27246 8.57655 8.2794 8.56857C8.38423 8.44804 8.44666 8.37626 8.517 8.2262C8.597 8.0712 8.54 7.9112 8.483 7.7932C8.44378 7.71056 8.20151 7.12275 7.99354 6.61815C7.90454 6.40223 7.82183 6.20155 7.764 6.0622C7.609 5.6912 7.491 5.6772 7.256 5.6672C7.2488 5.66684 7.24152 5.66648 7.23417 5.6661C7.15989 5.66234 7.07808 5.6582 6.988 5.6582C6.682 5.6582 6.363 5.7482 6.17 5.9452C6.16325 5.95209 6.15622 5.95924 6.14893 5.96666C5.90202 6.21777 5.352 6.77715 5.352 7.8922C5.352 9.00941 6.1447 10.0906 6.29137 10.2907C6.29541 10.2962 6.29897 10.301 6.302 10.3052C6.31082 10.3168 6.32746 10.3409 6.35167 10.3759C6.65115 10.8096 8.10983 12.922 10.285 13.8232C12.123 14.5852 12.669 14.5142 13.087 14.4252Z" fill="white"/>
+          </svg>
+          p.n-button1 whatsapp
+        a.n-button-green(rel='noopener nofollow' href='https://telegram.me/art_kelo' onclick='ym(14640535,\'reachGoal\',\'click_telegram\', {URL: document.location.href}); return true;' target='_blank')
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.8525 3.09205L2.7938 8.79416C1.7661 9.19948 1.77204 9.76244 2.60524 10.0135L6.47142 11.1978L15.4166 5.65579C15.8396 5.40309 16.226 5.53903 15.9084 5.81592L8.66101 12.2386H8.65931L8.66101 12.2394L8.39432 16.1526C8.78501 16.1526 8.95743 15.9766 9.17656 15.769L11.0544 13.9758L14.9605 16.809C15.6808 17.1984 16.198 16.9983 16.3772 16.1543L18.9414 4.28802C19.2038 3.25468 18.5396 2.78681 17.8525 3.09205Z" fill="white"/>
+          </svg>
+          p.n-button1 telegram
+    .modal__body
+      form#form-modal.form-request(action="/local/ajax/forms.php" data-redirect='/thanks.html')
+        .n-h3 Discuss the project
+        .ui-input
+          label.ui-input__float-label(for="form-modal-name-p") Your name
+          input(type="text" name="name" id="form-modal-name-p" placeholder="Igor" required)  
+        .ui-input
+          label.ui-input__float-label(for="form-modal-phoneNumber")  Phone:
+          input(type="tel" name="phoneNumber" id="form-modal-phoneNumber" placeholder="+7")
+        
+        <div class="g-recaptcha" data-sitekey="6LdA9JseAAAAADFzWcsSaXOVX5YkFaM5Qb0hyjMb" data-size="invisible"></div>
+        button(type="submit").n-button-green(data-modal-open data-modal-name="form-modal")
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+          </svg>
+          p.n-button1 Send
+        p.n-h6 By clicking on the button you agree to the terms of the <a>privacy policy and processing of personal data</a>
+      .form-response Thank you for your application. We will study all the data and contact you.
+
+.modal.n-gallery-modal(data-modal-name="n-gallery-modal")
+  .modal__inner
+    .modal__top
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+    .modal__body
+      .n-galleryProject
+        .n-galleryProject__list._title-list 
+          - var val = 0;
+          while val < 3
+            each title in ['Gallery', '12 ', 'Project P371']
+              .n-galleryProject__item 
+                .n-button1=title
+              - val++
+        .n-galleryProject__list 
+          - var val = 0;
+          while val < 10
+            a.n-galleryProject__item(data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg") 
+              .n-galleryProject__item-bg
+                .n-galleryProject__item-bgWrapper
+                  img(src="/img/newrubkoff/gallery-small1.jpg" alt="")
+            - val++
+          - var val = 0;
+          while val < 10
+            a.n-galleryProject__item(data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg") 
+              .n-galleryProject__item
+                .n-galleryProject__item-bg
+                  .n-galleryProject__item-bgWrapper
+                    img(src="/img/newrubkoff/gallery-small2.jpg" alt="")
+            - val++
+
+.modal.modal_with-form(data-modal-name="sale-modal")
+  .modal__inner
+    .modal__top
+      span.h2.form-request Discuss the project
+      span.h2.form-response Thank you for your application.
+      span.h5 If you have a question about a property you've already purchased, write to us in the chat
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+    .modal__body
+      form#sale-modal.form-request(action="/local/ajax/forms.php")
+        input.visually-hidden(type='text' name='sale-id' value='0')
+        .ui-input
+          label.ui-input__float-label(for="action-modal-name-p") Your name:
+          input(type="text" name="name" id="sale-modal-name-p" required)  
+        .ui-input
+          label.ui-input__float-label(for="sale-modal-phoneNumber")  Your phone:
+          input(type="tel" name="phoneNumber" id="sale-modal-phoneNumber")
+        
+        <div class="g-recaptcha" id="recaptcha2" data-sitekey="  LdA9JseAAAAADFzWcsSaXOVX5YkFaM5Qb0hyjMb" data-size="invisible"></div>
+        button.fill-button(type="submit") Send
+        p.h6.form-policy By clicking on the button you agree to the terms of the <a>privacy policy</a> and <a>processing of personal data</a>
+      .form-response 
+        button.fill-button(data-modal-close) Close
+
+.modal.modal_with-form(data-modal-name="auction-bet-modal")
+  .modal__inner
+    .modal__top
+      span.h2.form-request Place a bet
+      span.h2.form-response Thank you for your application.
+      span.h5 Leave your details and our manager will contact you
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+    .modal__body
+      form#auction-bet-modal.form-request(action="/local/ajax/forms.php")
+        input.display-none(type='text' name='project-id' value='0')
+        .ui-input
+          label.ui-input__float-label(for="auction-bet-modal-name-p") Your name:
+          input(type="text" name="name" id="auction-bet-modal-name-p" required)  
+        .ui-input
+          label.ui-input__float-label(for="auction-bet-modal-phoneNumber")  Your phone:
+          input(type="tel" name="phoneNumber" id="auction-bet-modal-phoneNumber")
+        <div class="g-recaptcha" id="recaptcha3" data-sitekey="6LcCmRgnAAAAAH_ruytbtP_CauNbi3y574reslAW" data-size="invisible"></div>
+        button.fill-button(type="submit") Send
+        p.h6.form-policy By clicking on the button you agree to the terms of the <a>privacy policy</a> and <a>processing of personal data</a>
+      .form-response Thank you for your application.. Мы изучим все данные и с вами свяжемся. 
+
+.modal(data-modal-name="what-included-modal")
+  .modal__inner
+    .modal__top
+      span.h2 What is included in the price
+      .modal__close-button(data-modal-close)
+        svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+          path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+          path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+    .modal__body
+      include ./_what-included
+
+template#modal-template
+  .modal
+    .modal__inner
+      .modal__top
+        span 
+        .modal__close-button(data-modal-close)
+          svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32')
+            path(fill='#0E0E0E' d='m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z')
+            path(fill='#0E0E0E' d='m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z')
+      .modal__body
+.modal-background.fixed-block(data-modal-close)

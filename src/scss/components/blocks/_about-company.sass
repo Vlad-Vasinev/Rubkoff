@@ -1,0 +1,215 @@
+
+.about
+  // padding-top: aCalc(130)
+
+  .about__title
+    font-size: aCalc(40)
+    font-style: normal
+    font-weight: 600
+    line-height: aCalc(50)
+    max-width: aCalc(1252)
+    width: 100%
+    margin-bottom: aCalc(40)
+    +mob
+      max-width: 100%
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 30px
+
+  .about__slider
+    position: relative
+    margin-bottom: aCalc(120)
+    .swiper-pagination
+      width: auto
+      height: auto
+      left: 0
+      right: 0
+      margin: 0 auto
+      transform: translateY(50%)
+      bottom: aCalc(-41)
+      +mob
+        bottom: -37px
+
+    .swiper-pagination-bullet
+      width: aCalc(6)
+      height: aCalc(6)
+      background-color: #000000
+      opacity: 0.5
+      +mob
+        width: 6px
+        height: 6px
+    .swiper-pagination-bullet.swiper-pagination-bullet-active
+      opacity: 1
+      position: relative
+      top: aCalc(1)
+      width: aCalc(8)
+      height: aCalc(8)
+      +mob
+        width: 8px
+        height: 8px
+      +mob
+        top: aCalc(2)
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+      margin: 0 aCalc(12)
+      +mob
+        margin: 0 7px
+    .slider-navigation-next, .slider-navigation-prev
+      background-color: transparent
+      position: absolute
+      bottom: aCalc(-45)
+      transform: translateY(50%)
+      z-index: 99
+      +mob
+        bottom: -28px
+        transform: translateY(50%)
+      svg
+        width: aCalc(24)
+        height: aCalc(24)
+        +mob
+          width: 24px
+          height: 24px
+    .slider-navigation-prev
+      left: 39%
+      +mob
+        bottom: -37px
+        left: 0
+        svg
+          width: 24px !important
+          height: 24px !important
+      +r($ms)
+        left: 0
+    .slider-navigation-next
+      transform: translateY(50%) rotate(180deg)
+      right: 39%
+      +mob
+        bottom: -37px
+        right: 0
+        transform: translateY(50%) rotate(180deg)
+        svg
+          width: 24px !important
+          height: 24px !important
+      +r($ms)
+        right: 0
+    +mob
+      margin-bottom: 0
+
+  .swiper-container
+    width: 100%
+    height: 100%
+
+  .about__slider-el
+    width: auto
+    height: aCalc(631)
+    margin-right: 40px
+    img
+      border-radius: 12px
+      height: 100%
+      display: block
+      width: 100%
+      object-fit: cover
+      +mob
+        width: 212px
+        height: 291px
+    +mob
+      height: auto
+
+  .about__info
+    font-style: normal
+    font-weight: 600
+    font-size: aCalc(40)
+    line-height: aCalc(50)
+    max-width: aCalc(1226)
+    width: 100%
+    margin: 0 auto aCalc(140)
+    +mob
+      max-width: 100%
+      font-size: 24px
+      line-height: 30px
+      margin-top: 40px
+      margin-bottom: 60px
+
+  .about__goals
+    max-width: aCalc(1226)
+    width: 100%
+    margin: 0 auto
+    +mob
+      max-width: 100%
+      margin-bottom: 0
+
+  .about__goals-title
+    font-size: aCalc(26)
+    font-style: normal
+    font-weight: 600
+    line-height: aCalc(32)
+    margin-bottom: aCalc(32)
+    +mob
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 16px
+
+  .about__goals-wrapper
+    display: flex
+    justify-content: space-between
+    +mob
+      flex-direction: column
+
+  .about__goals-item
+    max-width: aCalc(597)
+    width: 100%
+    +mob
+      margin-bottom: 28px
+      max-width: 100%
+
+  .about__goals-item:last-child
+    +mob
+      margin-bottom: 0
+
+  .about__goals-el
+    font-size: aCalc(24)
+    font-style: normal
+    font-weight: 400
+    line-height: aCalc(32)
+    margin-bottom: aCalc(40)
+    +mob
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 28px
+
+  .about__goals-el:last-child
+    +mob
+      margin-bottom: 0
+
+  .about__slider  .slider-navigation-next, .slider-navigation-prev
+    position: initial
+    bottom: 0
+
+  .about__slider .slider-navigation-next, .about__slider .slider-navigation-prev
+    transform: translateY(0)
+    position: initial
+
+  .about__slider .slider-navigation-next, .about__slider .slider-navigation-next
+    transform: translateY(0) rotate(180deg)
+    position: initial
+
+  .about__slider .swiper-pagination
+    max-width: max-content
+    position: initial
+    transform: translateY(40%)
+    height: 100%
+    margin: 0
+    text-align: center
+
+.control-wrapper
+  margin-top: aCalc(21)
+  .swiper-pagination
+    +r($ms + 6)
+      transform: translateY(0)
+  +mob
+    margin-top: 26px
+
+.control-wrapper__inner
+  display: flex
+  align-content: center
+  justify-content: center
+  +mob
+    justify-content: space-between

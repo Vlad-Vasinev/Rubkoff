@@ -1,0 +1,60 @@
+.two-col-banner
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: aCalc(21)
+  +mob
+    gap: 8px
+    grid-template-columns: unset
+    grid-auto-flow: row
+.info-sign
+  display: grid
+  position: relative
+  grid-template-columns: auto auto
+  height: 100%
+  box-sizing: border-box
+  padding: aCalc(24)
+  width: 100%
+  border-radius: aCalc(12)
+  border: 1px solid #D0D3E4
+  background-color: transparent
+  transition: all .3s
+  +mob
+    border-radius: 12px
+    padding: 16px
+    box-shadow: none
+  &__title
+    @extend .h3
+    color: #161616
+    grid-column: 1/2
+    margin-bottom: aCalc(12)
+    align-self: flex-start
+    +mob
+      margin-bottom: 8px
+      
+  &__info 
+    @extend .h6
+    grid-column: 1/2
+    max-width: aCalc(260)
+    margin-bottom: aCalc(16)
+    +mob
+      margin-bottom: 4px
+      max-width: 244px
+
+  &__icon 
+    grid-column: 2/3
+    grid-row: 3/4
+    align-self: flex-end
+    justify-self: flex-end
+      
+    img
+      width: aCalc(56)
+      height: auto
+      +mob
+        width: 56px
+        
+  .button
+    grid-row: 3/4
+    grid-column: 1/2
+    align-self: flex-end
+    justify-content: flex-start

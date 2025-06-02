@@ -1,0 +1,112 @@
+.info-page-heading
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: max-content 1fr
+  padding: 0 aCalc(40)
+  
+  +mob
+    grid-template-columns: 1fr
+    grid-template-rows: unset
+    padding: 0 16px
+  > h1
+    grid-column: 1/-1
+    +aProp(font-size, 120)
+    +aProp(line-height, 120)
+    text-transform: uppercase
+    font-weight: 800
+    height: max-content
+    +aProp(padding-bottom, 40)
+    +aProp(padding-top, 34)
+    +mob
+      font-size: 30px
+      line-height: 36px
+      padding-bottom: 60px
+      padding-top: 30px
+  &__section
+    +aProp(min-height, 500)
+    display: flex
+    flex-direction: column
+    width: 100%
+    +mob
+      min-height: unset
+      height: auto
+    .info-page-heading_ltd-w-p
+      +dsk
+        +aProp(max-width, 445)
+    h2, .h2, .h3, .h3
+      font-weight: 600
+      +dsk
+        margin-bottom: 24px
+  > div:nth-of-type(2).info-page-heading__section
+    padding-left: 40px
+    border-left: 1px solid #E5E5E5
+  
+  &__bottom
+    margin-top: auto
+    +mob
+      margin-top: 30px
+    .button_medium
+      +mob
+        width: 100%
+    .button_medium:not(:first-child)
+      +mob
+        margin-top: 30px
+  &__contacts
+    .h6
+      text-transform: uppercase
+    .h4
+    .h5
+    .h6 + .h4
+      margin-top: 8px
+      +mob
+        margin-top: 4px
+
+    .h4 + .h6
+      margin-top: 32px
+      +mob
+        margin-top: 24px
+
+    .h4 + .h5
+      margin-top: 16px
+      +mob
+        margin-top: 10px
+  .product-card__reg-data-ctr
+    width: 100%
+    display: grid
+    padding-right: 155px
+    column-gap: 10px
+    row-gap: 16px
+    grid-template-columns: max-content 1fr
+    +mob
+      padding: 0
+      grid-template: unset
+      gap: 0
+    .h5:nth-child(even)
+      +mob
+        margin-top: 2px
+        margin-bottom: 16px
+.info-page-heading
+  &_service &_ltd-w-p
+    max-width: aCalc(896)
+    +mob
+      max-width: 100%
+    .h4
+      @extend .h1
+      +mob
+        font-style: normal
+  &_service > div:nth-of-type(1).info-page-heading__section
+    padding-left: 0
+    border: none
+    +mob
+      padding-bottom: 20px
+      border-bottom: 1px solid $GrayBruh
+  &_service > div:nth-of-type(2).info-page-heading__section
+    +aProp(padding-left, 322)
+    border-left: none
+    +mob
+      border: none
+      padding: 0
+      padding-top: 20px
+    .h1
+      @extend .h4
+      font-weight: normal

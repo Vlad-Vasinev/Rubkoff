@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+      body {
+        color: #000
+      }
+      a {
+        color: #000
+      }
+    </style>
+    <title>localHost</title><link rel="preload" as="style" href="css/main.css" />
+<link rel="preload" href="fonts/Inter/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel='stylesheet' type="text/css" href="css/main.css" /><link rel="preload" as="image" media="(max-width:767px)" href="img/content/hb/00mp.webp"/>
+<link rel="preload" as="image" media="(min-width:768px)" href="img/content/hb/00p.webp"/>
+  </head>
+  <body>   
+    <header class="header">
+      <div class="n-header header__menu _scrolledNoTransparent"> 
+        <div class="nbl-burger n-burger_mob hamburger">
+          <div class="burger-item burger-first"></div>
+          <div class="burger-item burger-second"></div>
+          <div class="burger-item burger-third"> </div>
+        </div>
+        <div class="n-logo">
+           <img src="img/newrubkoff/logo.svg" alt="" /></div>
+        <div class="n-search n-search_mob" data-search-open><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10.5" cy="10.5" r="7.5" stroke="#0A0A0A" stroke-width="2"/>
+<path d="M20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.2929 16.7071L20.2929 21.7071L21.7071 20.2929L16.7071 15.2929L15.2929 16.7071Z" fill="#0A0A0A"/>
+</svg>
+        </div>
+        <div class="n-header__about"><a class="_icon" href="#">
+            <div class="n-button1">projects </div>
+            <div class="n-button1">86</div></a><a class="n-button1" href="#">company</a><a class="n-button1" href="#">partners</a></div>
+        <div class="n-header__social"><a class="n-button1" href="#" data-search-open>search</a><a class="_icon" data-modal-open data-modal-name="form-modal"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+</svg>
+            <div class="n-button1">discuss the project</div></a></div>
+      </div>
+      <div class="header-search fixed-block">
+        <div class="header-search__field">
+          <input type="text" placeholder="Search the site">
+          <div class="close-button close-button-text"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="0.5" width="24" height="24" rx="12" fill="#C1C1C1"/>
+<path d="M8 17L16 9M8 9L16 17" stroke="white" stroke-width="1.5"/>
+</svg>
+          </div>
+          <div class="n-button1" data-search-close>close</div>
+        </div>
+        <div class="header-search__suggestions">
+          <div class="header-search__suggestions-container"></div>
+        </div>
+      </div>
+      <template class="header-search-item-tpl"><a class="product-card">
+          <div class="product-card__img"><img tpl-image src="img/galleryItem1.png"></div>
+          <div class="product-card__description">
+            <div class="product-card__title">
+              <div class="n-h4" tpl-name>Project П-94</div>
+            </div>
+            <div class="product-card__chars-ctr">
+              <div class="product-card__char">
+                <div class="n-h6" tpl-area></div>
+              </div>
+            </div>
+          </div></a></template>
+      <div class="n-header-drop">
+        <div class="n-logo"> </div>
+        <div class="n-header__about">
+          <div class="n-header-drop__ul"> 
+            <div class="_icon"><a class="n-button1" href="#">Stone houses</a>
+              <div class="n-button1">32</div>
+            </div>
+            <div class="_icon"><a class="n-button1" href="#">Houses made of laminated timber</a>
+              <div class="n-button1">52</div>
+            </div>
+            <div class="_icon"><a class="n-button1" href="#">houses for sale</a>
+              <div class="n-button1">436</div>
+            </div>
+            <div class="_icon"><a class="n-button1" href="#">houses for sale</a>
+              <div class="n-button1">6</div>
+            </div><a class="n-button1" href="#">Interior decoration</a>
+          </div>
+          <div class="n-header-drop__ul"> <a class="n-button1" href="#">About company</a><a class="n-button1" href="#">Services</a><a class="n-button1" href="#">Contacts</a></div>
+          <div class="n-header-drop__ul"> <a class="n-button1" href="#">villages</a><a class="n-button1" href="#">manufacturers</a></div>
+        </div>
+        <div class="n-header__social"><a class="n-button1 n-header__search" href="#">search</a><a class="_icon" href="#"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+</svg>
+            <div class="n-button1">discuss the projet</div></a></div>
+      </div>
+      <div class="header-sidebar">
+        <div class="header-sidebar__inner">
+          <div class="n-footer">
+            <div class="n-footer__top"> 
+              <ul class="_mobile">
+                <li class="n-footer__open"><a class="_icon" href="#">
+                    <div class="n-button1">Projects </div>
+                    <div class="n-button1">866</div></a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+                  <li> <a hre="#">All projects</a></li>
+                  <li> <a hre="#">Houses for sale </a></li>
+                  <li> <a hre="#">Laminated timber</a></li>
+                  <li> <a hre="#">Objects on the map</a></li>
+                  <li> <a hre="#">Open Village</a></li>
+                </li>
+              </ul>
+              <ul class="_mobile">
+                <li class="n-footer__open">
+                  <div class="n-h6">About company</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+                  <li> <a hre="#">All projects</a></li>
+                  <li> <a hre="#">Houses for sale </a></li>
+                  <li> <a hre="#">Laminated timber</a></li>
+                  <li> <a hre="#">Houses for sale</a></li>
+                  <li> <a hre="#">Combined houses</a></li>
+                </li>
+              </ul>
+              <ul class="_mobile">
+                <li class="n-footer__open"><a class="_icon" href="#">
+                    <div class="n-button1">Contacts </div>
+                    <div class="n-button1">+7 800 555 35 35</div></a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+                  <li> <a hre="#">Construction</a></li>
+                  <li> <a hre="#">Individual design</a></li>
+                  <li> <a hre="#">Site's selection</a></li>
+                  <li> <a hre="#">Engineering and Electrical</a></li>
+                  <li> <a hre="#">Furnishing White box</a></li>
+                  <li> <a hre="#">Interior design</a></li>
+                  <li> <a hre="#">Furnishings</a></li>
+                </li>
+              </ul>
+              <ul class="_mobile">
+                <li class="n-footer__open"><a class="_icon" href="#">
+                    <div class="n-button1">Villages </div>
+                    <div class="n-button1">12866</div></a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+                  <li> <a hre="#">About company</a></li>
+                  <li> <a hre="#">Team</a></li>
+                  <li> <a hre="#">Contacts</a></li>
+                  <li> <a hre="#">Partner villages</a></li>
+                  <li> <a hre="#">Partners</a></li>
+                  <li> <a hre="#">Interior design</a></li>
+                  <li> <a hre="#">Furnishings</a></li>
+                </li>
+              </ul>
+              <ul class="_mobile">
+                <li class="n-footer__open">
+                  <div class="n-h6">Manufacturers</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+                  <li> <a hre="#">About company</a></li>
+                  <li> <a hre="#">Team</a></li>
+                  <li> <a hre="#">Contacts</a></li>
+                  <li> <a hre="#">Partner villages</a></li>
+                  <li> <a hre="#">Partners</a></li>
+                  <li> <a hre="#">Interior design</a></li>
+                  <li> <a hre="#">Furnishings</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page">
+      <div class="page n-news-page no-section-mg"> 
+        <div class="page__container">
+          <div class="page__breadcrumb page__breadcrumb_overlay _big">
+            <nav class="breadcrumb grey" aria-label="Breadcrumb">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5.8V13H5.92857V9.8C5.92857 8.91634 6.63212 8.2 7.5 8.2C8.36788 8.2 9.07143 8.91634 9.07143 9.8V13H13V5.8L7.5 1L2 5.8Z" fill="white"/>
+</svg>
+                </li>
+                <li><a class="n-h6" href="#">Main</a></li>
+                <li><a class="n-h6" href="#">houses made of laminated timber</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="n-links-project">
+            <div class="n-header-drop__ul"> <a class="_icon" href="#">
+                <div class="n-button1">projects </div>
+                <div class="n-button1">80000</div></a><a class="n-button1" href="#">Stone houses</a><a class="n-button1" href="#">Houses made of laminated timber</a><a class="_icon" href="#">
+                <div class="n-button1">Built houses</div>
+                <div class="n-button1">436</div></a><a class="n-button1" href="#">Interior decoration</a></div>
+          </div>
+          <section class="page__block">
+            <div class="nbl-textTruncate">
+              <div class="n-h1">Houses made of laminated timber</div>
+              <div class="truncate-wrapper">
+                <div class="n-links-project _desk">
+                  <div class="n-header-drop__ul"><a class="_icon" href="#">
+                      <div class="n-button1">Stone houses</div>
+                      <div class="n-button1">32</div></a><a class="_icon" href="#">
+                      <div class="n-button1">Houses made of laminated timber </div>
+                      <div class="n-button1">52</div></a><a class="_icon" href="#">
+                      <div class="n-button1">Built houses</div>
+                      <div class="n-button1">436</div></a><a class="_icon" href="#">
+                      <div class="n-button1">houses for sale</div>
+                      <div class="n-button1">6</div></a><a class="n-button1" href="#">Our villages</a></div>
+                </div>
+                <div class="truncate truncate--line-clamped">
+                  <div class="n-p1">
+                    The 876 square meter house is the perfect embodiment of
+                    country life luxury. Stylish and elegant two-story house
+                    offers everything you need for comfortable living and.
+                    offers everything you need for comfortable living and.
+                    <div class="end-marker-first">
+                      <div class="n-button1 read-more _desktop">Read more</div>
+                    </div><br/>
+<br/>The two-storey house P371 is a luxurious place for country life,
+                    where comfort and coziness are combined with elegance and style.
+                    The project offers many opportunities for entertainment and recreation, and
+                    also creates an ideal environment for enjoying nature and spending
+                    quality time with loved ones.<br/>
+<br/>The first floor of the house offers many opportunities for entertainment.
+                    There is a large cinema at your disposal, where you can enjoy
+                    watching movies in a cozy and comfortable environment.
+                    A billiard area and a gym with access to the terrace.
+                    A spa area block with a steam room and a hammam, continuing on a separate terrace
+                    is a unique opportunity to relax and enjoy peace and harmony.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page__block page__block_full-w-mob _noMargin paddingMobSm">
+            <div class="n-projects">
+              <div class="n-projects__el">
+                <div class="nbl-card _imgFirst">
+                  <div class="nbl-card__info"> 
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon">
+                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.92648 13.8094C3.58793 14.3619 4.37127 14.7503 5.2123 14.9426C5.29278 14.9689 5.34694 14.8639 5.29278 14.8114C3.49136 13.0976 4.4812 11.2429 5.2123 10.4067C5.73355 9.80967 6.47593 8.82643 6.42178 7.50794C6.42178 7.37594 6.55717 7.27019 6.66397 7.34969C7.68616 7.87694 8.38492 9.03718 8.57296 9.98592C8.86931 9.69642 8.97687 9.24793 8.97687 8.85268C8.97687 8.72068 9.13783 8.61493 9.27247 8.72068C10.2405 9.59067 11.9073 12.5434 9.21832 14.8631C9.16491 14.9164 9.21831 15.0221 9.27247 14.9959C10.0878 14.7827 10.8546 14.4156 11.5312 13.9144C15.9141 10.5394 13.0634 4.55447 11.2078 2.57748C10.9663 2.33973 10.5361 2.49798 10.5361 2.84073C10.509 3.55322 10.2939 4.34372 9.72978 4.87096C9.29955 3.07848 7.86593 1.04224 5.8223 0.0402521C5.55378 -0.0917468 5.23111 0.119002 5.25818 0.409249C5.31083 2.86173 3.70647 4.42322 2.30821 6.45345C1.0709 8.27219 0.264582 11.6209 2.92648 13.8094Z" fill="white"/>
+</svg>
+                        <div class="n-h6">the house is for sale</div>
+                      </div>
+                      <div class="n-badgeIcon _grey"> 
+                        <div class="n-h6">Selection of a site</div>
+                      </div>
+                    </div>
+                    <div class="n-h2">Project П173</div>
+                    <div class="n-charactersMesh">
+                      <div class="n-character">
+                        <div class="n-h6">Square:</div>
+                        <div class="n-h6">234 m²</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">number of storeys:</div>
+                        <div class="n-h6">2 floors</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">construction period:</div>
+                        <div class="n-h6">4 months</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">Price:</div>
+                        <div class="n-h6">from 9 747 000 ₽</div>
+                      </div>
+                    </div>
+                    <div class="n-p2">
+                       For those who know that career and family life are not mutually exclusive,
+                      the two-story cottage P173 is suitable.
+                    </div>
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">glued laminated timber</div>
+                      </div>
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">for a large family</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nbl-card__content"> 
+                    <div class="n-cardSlider"> 
+                      <div class="n-cardSlider__wrapper swiper-wrapper">
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                      </div><div class="n-cardSlider__button swiper-button-next">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+<div class="n-cardSlider__button swiper-button-prev">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="n-projects__el">
+                <div class="nbl-card _imgFirst">
+                  <div class="nbl-card__info"> 
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon">
+                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.92648 13.8094C3.58793 14.3619 4.37127 14.7503 5.2123 14.9426C5.29278 14.9689 5.34694 14.8639 5.29278 14.8114C3.49136 13.0976 4.4812 11.2429 5.2123 10.4067C5.73355 9.80967 6.47593 8.82643 6.42178 7.50794C6.42178 7.37594 6.55717 7.27019 6.66397 7.34969C7.68616 7.87694 8.38492 9.03718 8.57296 9.98592C8.86931 9.69642 8.97687 9.24793 8.97687 8.85268C8.97687 8.72068 9.13783 8.61493 9.27247 8.72068C10.2405 9.59067 11.9073 12.5434 9.21832 14.8631C9.16491 14.9164 9.21831 15.0221 9.27247 14.9959C10.0878 14.7827 10.8546 14.4156 11.5312 13.9144C15.9141 10.5394 13.0634 4.55447 11.2078 2.57748C10.9663 2.33973 10.5361 2.49798 10.5361 2.84073C10.509 3.55322 10.2939 4.34372 9.72978 4.87096C9.29955 3.07848 7.86593 1.04224 5.8223 0.0402521C5.55378 -0.0917468 5.23111 0.119002 5.25818 0.409249C5.31083 2.86173 3.70647 4.42322 2.30821 6.45345C1.0709 8.27219 0.264582 11.6209 2.92648 13.8094Z" fill="white"/>
+</svg>
+                        <div class="n-h6">the house is for sale</div>
+                      </div>
+                      <div class="n-badgeIcon _grey"> 
+                        <div class="n-h6">Selection of a site</div>
+                      </div>
+                    </div>
+                    <div class="n-h2">Project П173</div>
+                    <div class="n-charactersMesh">
+                      <div class="n-character">
+                        <div class="n-h6">Square:</div>
+                        <div class="n-h6">234 m²</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">number of storeys:</div>
+                        <div class="n-h6">2 floors</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">construction period:</div>
+                        <div class="n-h6">4 months</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">Price:</div>
+                        <div class="n-h6">from 9 747 000 ₽</div>
+                      </div>
+                    </div>
+                    <div class="n-p2">
+                       For those who know that career and family life are not mutually exclusive,
+                      the two-story cottage P173 is suitable.
+                    </div>
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">glued laminated timber</div>
+                      </div>
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">for a large family</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nbl-card__content"> 
+                    <div class="n-cardSlider"> 
+                      <div class="n-cardSlider__wrapper swiper-wrapper">
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                      </div><div class="n-cardSlider__button swiper-button-next">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+<div class="n-cardSlider__button swiper-button-prev">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="n-projects__el">
+                <div class="nbl-card _imgFirst">
+                  <div class="nbl-card__info"> 
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon">
+                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.92648 13.8094C3.58793 14.3619 4.37127 14.7503 5.2123 14.9426C5.29278 14.9689 5.34694 14.8639 5.29278 14.8114C3.49136 13.0976 4.4812 11.2429 5.2123 10.4067C5.73355 9.80967 6.47593 8.82643 6.42178 7.50794C6.42178 7.37594 6.55717 7.27019 6.66397 7.34969C7.68616 7.87694 8.38492 9.03718 8.57296 9.98592C8.86931 9.69642 8.97687 9.24793 8.97687 8.85268C8.97687 8.72068 9.13783 8.61493 9.27247 8.72068C10.2405 9.59067 11.9073 12.5434 9.21832 14.8631C9.16491 14.9164 9.21831 15.0221 9.27247 14.9959C10.0878 14.7827 10.8546 14.4156 11.5312 13.9144C15.9141 10.5394 13.0634 4.55447 11.2078 2.57748C10.9663 2.33973 10.5361 2.49798 10.5361 2.84073C10.509 3.55322 10.2939 4.34372 9.72978 4.87096C9.29955 3.07848 7.86593 1.04224 5.8223 0.0402521C5.55378 -0.0917468 5.23111 0.119002 5.25818 0.409249C5.31083 2.86173 3.70647 4.42322 2.30821 6.45345C1.0709 8.27219 0.264582 11.6209 2.92648 13.8094Z" fill="white"/>
+</svg>
+                        <div class="n-h6">the house is for sale</div>
+                      </div>
+                      <div class="n-badgeIcon _grey"> 
+                        <div class="n-h6">Selection of a site</div>
+                      </div>
+                    </div>
+                    <div class="n-h2">Project П173</div>
+                    <div class="n-charactersMesh">
+                      <div class="n-character">
+                        <div class="n-h6">Square:</div>
+                        <div class="n-h6">234 m²</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">number of storeys:</div>
+                        <div class="n-h6">2 floors</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">construction period:</div>
+                        <div class="n-h6">4 months</div>
+                      </div>
+                      <div class="n-character">
+                        <div class="n-h6">Price:</div>
+                        <div class="n-h6">from 9 747 000 ₽</div>
+                      </div>
+                    </div>
+                    <div class="n-p2">
+                       For those who know that career and family life are not mutually exclusive,
+                      the two-story cottage P173 is suitable.
+                    </div>
+                    <div class="n-badgeIconsMesh">
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">glued laminated timber</div>
+                      </div>
+                      <div class="n-badgeIcon _bl-white">
+                        <div class="n-h6">for a large family</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nbl-card__content"> 
+                    <div class="n-cardSlider"> 
+                      <div class="n-cardSlider__wrapper swiper-wrapper">
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                        <div class="n-cardSlider__item swiper-slide"><img src="/img/newrubkoff/n-card1.jpg" alt=""></div>
+                      </div><div class="n-cardSlider__button swiper-button-next">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+<div class="n-cardSlider__button swiper-button-prev">
+<img src="/img/newrubkoff/slider-arrow.png" alt="">
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="nbl-pagination"> <a class="nbl-paginationLink _visited">
+          <div class="n-h6">1</div></a><a class="nbl-paginationLink" href="">
+          <div class="n-h6">2</div></a><a class="nbl-paginationLink" href="">
+          <div class="n-h6">...</div></a><a class="nbl-paginationLink" href="">
+          <div class="n-h6">8</div></a></div> 
+      <div class="nbl-end">
+        <div class="n-h2">We will be glad <br/>to discuss your project</div>
+        <button class="n-button-green" data-modal-open data-modal-name="form-modal"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+</svg>
+          <p class="n-button1">discuss the project</p>
+        </button>
+      </div>
+      <div class="nbl-cookies">
+        <div class="nbl-cookies__body">
+          <div class="h4">We use cookies</div>
+          <div class="h6">
+            This site uses cookies to provide you with a better browsing experience,
+            analyze traffic, and personalize content. By continuing to use the site,
+            you agree to our use of cookies.
+          </div>
+          <div class="nbl-cookies__body-btns">
+            <button class="nbl-cookies__close">Okay    </button><a class="nbl-cookies__link" href="#">Find out more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="n-footer">
+      <div class="n-footer__top"> 
+        <ul class="_mobile">
+          <li class="n-footer__open">
+            <div class="n-h6">Completed projects</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+            <li> <a hre="#">All projects</a></li>
+            <li> <a hre="#">Houses for sale</a></li>
+            <li> <a hre="#">Houses from laminated timber</a></li>
+            <li> <a hre="#">Objects on map</a></li>
+            <li> <a hre="#">Open Village</a></li>
+          </li>
+        </ul>
+        <ul class="_mobile">
+          <li class="n-footer__open">
+            <div class="n-h6">house projects</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+            <li> <a hre="#">All projects</a></li>
+            <li> <a hre="#">Houses for sale </a></li>
+            <li> <a hre="#">Houses from laminated timber</a></li>
+            <li> <a hre="#">Houses for sale</a></li>
+            <li> <a hre="#">Combined houses</a></li>
+          </li>
+        </ul>
+        <ul class="_mobile">
+          <li class="n-footer__open">
+            <div class="n-h6">Services</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+            <li> <a hre="#">Construction</a></li>
+            <li> <a hre="#">Custom design</a></li>
+            <li> <a hre="#">Site selection</a></li>
+            <li> <a hre="#">Engineering and Electricity</a></li>
+            <li> <a hre="#">Finishing White box</a></li>
+            <li> <a hre="#">Interior design</a></li>
+            <li> <a hre="#">Furnishings</a></li>
+          </li>
+        </ul>
+        <ul class="_mobile">
+          <li class="n-footer__open">
+            <div class="n-h6">About company</div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10L12 14L16 10" stroke="white"/>
+</svg>
+            <li> <a hre="#">About company</a></li>
+            <li> <a hre="#">Team</a></li>
+            <li> <a hre="#">Contacts</a></li>
+            <li> <a hre="#">Partner villages</a></li>
+            <li> <a hre="#">Partners</a></li>
+            <li> <a hre="#">Interior design</a></li>
+            <li> <a hre="#">Furnishings</a></li>
+          </li>
+        </ul>
+        <ul class="_icons-list"> 
+          <li class="n-footer__open _mob-hide">
+            <div class="n-h6">Social media</div>
+            <li class="_icon"><img src="/img/newrubkoff/n-yt.png" alt=""><a hre="#">Youtube</a></li>
+            <li class="_icon"><img src="/img/newrubkoff/n-wk.png" alt=""><a hre="#">Vkontakte</a></li>
+            <li class="_icon"><img src="/img/newrubkoff/n-tg.png" alt=""><a hre="#">Telegram</a></li>
+            <li class="_icon"><img src="/img/newrubkoff/n-tg.png" alt=""><a hre="#">Dzen</a></li>
+          </li>
+        </ul>
+      </div>
+      <div class="n-footer__bottom"> 
+        <div class="n-footer__bottom-left"> 
+          <div class="n-h6">© 2023-2024. Rubkoff</div>
+          <div class="n-h6">Privacy Policy</div>
+        </div>
+        <div class="n-footer__bottom-right"> 
+          <div class="n-h6"> Website creation - Studio NetLab</div>
+        </div>
+      </div>
+    </div>
+    <div class="fullscreen-slider">
+      <template id="slide-tpl">
+        <div class="swiper-slide fullscreen-slider__slide">
+          <div class="swiper-zoom-container" data-lazy><img></div>
+        </div>
+      </template>
+      <div class="fullscreen-slider__close" data-fs-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+          <path fill="#fff" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+          <path fill="#fff" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+        </svg>
+      </div>
+      <div class="fullscreen-slider__slider swiper-container">
+        <div class="fullscreen-slider__wrapper swiper-wrapper"> </div>
+      </div>
+      <div class="slider-pagination-navigation">
+        <div class="slider-navigation-prev slide-button slide-button_horizontal"><span> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+              <path stroke="#161616" stroke-linecap="round" stroke-width="2" d="m14.17 2.76-8.34 7.5 8.34 7.5"></path>
+            </svg></span></div>
+        <div class="swiper-pagination"></div>
+        <div class="slider-navigation-next slide-button slide-button_horizontal"><span> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+              <path stroke="#161616" stroke-linecap="round" stroke-width="2" d="m14.17 2.76-8.34 7.5 8.34 7.5"></path>
+            </svg></span></div>
+      </div>
+    </div>
+    <div class="modal modal_sheet" data-modal-name="mobile-contacts">
+      <div class="modal__inner">
+        <div class="modal__top"><span class="h3">Contact us in your favorite messenger - let's discuss your project!</span>
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="h4 contacts-sheet-btn"><span>Write to Telegram</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 20"><path fill="#4EABEA" d="M22.38.132 1.12 8.277c-1.45.58-1.442 1.384-.266 1.742l5.459 1.692L18.94 3.794c.597-.361 1.143-.167.694.229L9.404 13.198H9.4l.003.001-.377 5.59c.552 0 .795-.251 1.105-.548l2.65-2.561 5.515 4.047c1.017.556 1.747.27 2-.935l3.62-16.952C24.287.364 23.35-.305 22.38.132Z"/></svg></div>
+          <div class="h4 contacts-sheet-btn"><span>НаWrite to WhatsApp</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#5CBE5A" fill-rule="evenodd" d="M11.997 0h.006C18.619 0 24 5.383 24 12c0 6.616-5.38 12-11.997 12-2.44 0-4.704-.726-6.601-1.983L.788 23.491l1.495-4.457A11.911 11.911 0 0 1 0 12C0 5.382 5.38 0 11.997 0Zm4.634 18.638c.916-.198 2.065-.876 2.355-1.694.29-.819.29-1.516.205-1.665-.068-.117-.228-.195-.467-.31l-.203-.1c-.353-.175-2.067-1.022-2.391-1.135-.318-.12-.621-.078-.861.261l-.137.192c-.29.407-.569.8-.8 1.05-.212.225-.557.254-.847.134a8.616 8.616 0 0 0-.108-.044c-.458-.185-1.475-.596-2.706-1.692-1.038-.924-1.743-2.074-1.947-2.42-.2-.345-.027-.548.132-.736l.01-.01c.102-.128.202-.234.302-.34.073-.077.145-.154.22-.24l.031-.036c.158-.18.251-.289.357-.514.12-.232.034-.472-.051-.65-.06-.123-.422-1.005-.734-1.762l-.345-.834c-.232-.556-.41-.577-.762-.592l-.032-.002c-.112-.005-.235-.012-.37-.012-.459 0-.937.135-1.227.43l-.031.033c-.37.377-1.196 1.216-1.196 2.888 0 1.676 1.19 3.298 1.41 3.598l.015.022.075.106c.449.65 2.637 3.82 5.9 5.17 2.757 1.144 3.576 1.037 4.203.904Z" clip-rule="evenodd"/></svg></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal _form-modal" data-modal-name="form-modal">
+      <div class="modal__inner">
+        <div class="modal__top"><span class="n-h2 form-request">Discuss the project</span><span class="h2 form-response">Thank you for your application.</span>
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+          <div class="modal__top-row"><a class="n-button-green" rel="noopener nofollow" href="https://wa.me/79309498523?text=Здравствуйте! Номер моей заявки: 692457" onclick="ym(14640535,'reachGoal','proek-whats-app', {URL: document.location.href}); return true;" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.998 2H10.002C14.413 2 18 5.589 18 10C18 14.411 14.413 18 10.002 18C8.375 18 6.866 17.516 5.601 16.678L2.526 17.661L3.523 14.689C2.564 13.372 2 11.75 2 10C2 5.588 5.587 2 9.998 2ZM13.087 14.4252C13.698 14.2932 14.464 13.8412 14.657 13.2962C14.85 12.7502 14.85 12.2852 14.794 12.1862C14.7488 12.1077 14.6419 12.0562 14.4822 11.9793C14.4407 11.9593 14.3955 11.9376 14.347 11.9132C14.112 11.7962 12.969 11.2312 12.753 11.1562C12.541 11.0762 12.339 11.1042 12.179 11.3302C12.1486 11.3728 12.1182 11.4155 12.088 11.458C11.895 11.7294 11.7088 11.9913 11.554 12.1582C11.413 12.3082 11.183 12.3272 10.99 12.2472C10.969 12.2384 10.9448 12.2287 10.9178 12.2178C10.6122 12.0944 9.93444 11.8206 9.114 11.0902C8.422 10.4742 7.952 9.7072 7.816 9.4772C7.68247 9.24647 7.79765 9.11118 7.90409 8.98614C7.90606 8.98382 7.90803 8.98151 7.91 8.9792C7.97863 8.89429 8.04523 8.82358 8.11216 8.75252C8.16031 8.7014 8.20863 8.6501 8.258 8.5932C8.26533 8.58475 8.27246 8.57655 8.2794 8.56857C8.38423 8.44804 8.44666 8.37626 8.517 8.2262C8.597 8.0712 8.54 7.9112 8.483 7.7932C8.44378 7.71056 8.20151 7.12275 7.99354 6.61815C7.90454 6.40223 7.82183 6.20155 7.764 6.0622C7.609 5.6912 7.491 5.6772 7.256 5.6672C7.2488 5.66684 7.24152 5.66648 7.23417 5.6661C7.15989 5.66234 7.07808 5.6582 6.988 5.6582C6.682 5.6582 6.363 5.7482 6.17 5.9452C6.16325 5.95209 6.15622 5.95924 6.14893 5.96666C5.90202 6.21777 5.352 6.77715 5.352 7.8922C5.352 9.00941 6.1447 10.0906 6.29137 10.2907C6.29541 10.2962 6.29897 10.301 6.302 10.3052C6.31082 10.3168 6.32746 10.3409 6.35167 10.3759C6.65115 10.8096 8.10983 12.922 10.285 13.8232C12.123 14.5852 12.669 14.5142 13.087 14.4252Z" fill="white"/>
+</svg>
+              <p class="n-button1">whatsapp</p></a><a class="n-button-green" rel="noopener nofollow" href="https://telegram.me/art_kelo" onclick="ym(14640535,'reachGoal','click_telegram', {URL: document.location.href}); return true;" target="_blank"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.8525 3.09205L2.7938 8.79416C1.7661 9.19948 1.77204 9.76244 2.60524 10.0135L6.47142 11.1978L15.4166 5.65579C15.8396 5.40309 16.226 5.53903 15.9084 5.81592L8.66101 12.2386H8.65931L8.66101 12.2394L8.39432 16.1526C8.78501 16.1526 8.95743 15.9766 9.17656 15.769L11.0544 13.9758L14.9605 16.809C15.6808 17.1984 16.198 16.9983 16.3772 16.1543L18.9414 4.28802C19.2038 3.25468 18.5396 2.78681 17.8525 3.09205Z" fill="white"/>
+</svg>
+              <p class="n-button1">telegram</p></a></div>
+        </div>
+        <div class="modal__body">
+          <form class="form-request" id="form-modal" action="/local/ajax/forms.php" data-redirect="/thanks.html">
+            <div class="n-h3">Discuss the project</div>
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="form-modal-name-p">Your name</label>
+              <input type="text" name="name" id="form-modal-name-p" placeholder="Igor" required>
+            </div>
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="form-modal-phoneNumber"> Phone:</label>
+              <input type="tel" name="phoneNumber" id="form-modal-phoneNumber" placeholder="+7">
+            </div><div class="g-recaptcha" data-sitekey="6LdA9JseAAAAADFzWcsSaXOVX5YkFaM5Qb0hyjMb" data-size="invisible"></div>
+            <button class="n-button-green" type="submit" data-modal-open data-modal-name="form-modal"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+</svg>
+              <p class="n-button1">Send</p>
+            </button>
+            <p class="n-h6">By clicking on the button you agree to the terms of the <a>privacy policy and processing of personal data</a></p>
+          </form>
+          <div class="form-response">Thank you for your application. We will study all the data and contact you.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal n-gallery-modal" data-modal-name="n-gallery-modal">
+      <div class="modal__inner">
+        <div class="modal__top">
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="n-galleryProject">
+            <div class="n-galleryProject__list _title-list"> 
+              <div class="n-galleryProject__item"> 
+                <div class="n-button1">Gallery</div>
+              </div>
+              <div class="n-galleryProject__item"> 
+                <div class="n-button1">12 </div>
+              </div>
+              <div class="n-galleryProject__item"> 
+                <div class="n-button1">Project P371</div>
+              </div>
+            </div>
+            <div class="n-galleryProject__list"> <a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/fancyb-1.jpg"> 
+                <div class="n-galleryProject__item-bg">
+                  <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small1.jpg" alt=""></div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a><a class="n-galleryProject__item" data-fancybox="gallery" href="/img/newrubkoff/gallery-small2.jpg"> 
+                <div class="n-galleryProject__item">
+                  <div class="n-galleryProject__item-bg">
+                    <div class="n-galleryProject__item-bgWrapper"><img src="/img/newrubkoff/gallery-small2.jpg" alt=""></div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_with-form" data-modal-name="sale-modal">
+      <div class="modal__inner">
+        <div class="modal__top"><span class="h2 form-request">Discuss the project</span><span class="h2 form-response">Thank you for your application.</span><span class="h5">If you have a question about a property you've already purchased, write to us in the chat</span>
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <form class="form-request" id="sale-modal" action="/local/ajax/forms.php">
+            <input class="visually-hidden" type="text" name="sale-id" value="0">
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="action-modal-name-p">Your name:</label>
+              <input type="text" name="name" id="sale-modal-name-p" required>
+            </div>
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="sale-modal-phoneNumber"> Your phone:</label>
+              <input type="tel" name="phoneNumber" id="sale-modal-phoneNumber">
+            </div><div class="g-recaptcha" id="recaptcha2" data-sitekey="  LdA9JseAAAAADFzWcsSaXOVX5YkFaM5Qb0hyjMb" data-size="invisible"></div>
+            <button class="fill-button" type="submit">Send</button>
+            <p class="h6 form-policy">By clicking on the button you agree to the terms of the <a>privacy policy</a> and <a>processing of personal data</a></p>
+          </form>
+          <div class="form-response"> 
+            <button class="fill-button" data-modal-close>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_with-form" data-modal-name="auction-bet-modal">
+      <div class="modal__inner">
+        <div class="modal__top"><span class="h2 form-request">Place a bet</span><span class="h2 form-response">Thank you for your application.</span><span class="h5">Leave your details and our manager will contact you</span>
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <form class="form-request" id="auction-bet-modal" action="/local/ajax/forms.php">
+            <input class="display-none" type="text" name="project-id" value="0">
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="auction-bet-modal-name-p">Your name:</label>
+              <input type="text" name="name" id="auction-bet-modal-name-p" required>
+            </div>
+            <div class="ui-input">
+              <label class="ui-input__float-label" for="auction-bet-modal-phoneNumber"> Your phone:</label>
+              <input type="tel" name="phoneNumber" id="auction-bet-modal-phoneNumber">
+            </div><div class="g-recaptcha" id="recaptcha3" data-sitekey="6LcCmRgnAAAAAH_ruytbtP_CauNbi3y574reslAW" data-size="invisible"></div>
+            <button class="fill-button" type="submit">Send</button>
+            <p class="h6 form-policy">By clicking on the button you agree to the terms of the <a>privacy policy</a> and <a>processing of personal data</a></p>
+          </form>
+          <div class="form-response">Thank you for your application.. Мы изучим все данные и с вами свяжемся. </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-name="what-included-modal">
+      <div class="modal__inner">
+        <div class="modal__top"><span class="h2">What is included in the price</span>
+          <div class="modal__close-button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+              <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+              <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="what-included-block">
+            <div class="h3">Plot, Landscape, Networks</div>
+            <ul>
+              <li><span>Land plot:</span><span>2 700 000 ₽</span></li>
+              <li><span>Site preparation (tree cutting, leveling, registration), connection of external communications, turnkey septic tank, turnkey embedded electricians and engineering, slab road for construction, engineering and geological surveys, KZ, KR, Landscape, Design projects</span><span>1 850 000 ₽</span></li>
+              <li><span>Drainage system and storm sewerage</span><span>1 850 000 ₽</span></li>
+              <li><span>Lawn, flowerbeds covered with bark, light and sockets around the site</span><span>750 000 ₽</span></li>
+              <li><span>Landscaping (plants)</span><span>2 228 000 ₽</span></li>
+              <li><span>Automatic watering</span><span>681 000 ₽</span></li>
+              <li><span>Blind area, paths, parking (granite crushed stone) and landscape slabs</span><span>780 000 ₽</span></li>
+            </ul>
+            <div class="h3">Plot, Landscape, Networks</div>
+            <ul>
+              <li><span>Land plot:</span><span>2 700 000 ₽</span></li>
+              <li><span>Site preparation (tree cutting, leveling, registration), connection of external communications, turnkey septic tank, turnkey embedded electricians and engineering, slab road for construction, engineering and geological surveys, KZ, KR, Landscape, Design projects</span><span>1 850 000 ₽</span></li>
+              <li><span>Drainage system and storm sewerage</span><span>1 850 000 ₽</span></li>
+              <li><span>Lawn, flowerbeds covered with bark, light and sockets around the site</span><span>750 000 ₽</span></li>
+              <li><span>Landscaping (plants)</span><span>2 228 000 ₽</span></li>
+              <li><span>Automatic watering</span><span>681 000 ₽</span></li>
+              <li><span>Blind area, paths, parking (granite crushed stone) and landscape slabs</span><span>780 000 ₽</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <template id="modal-template">
+      <div class="modal">
+        <div class="modal__inner">
+          <div class="modal__top"><span> </span>
+            <div class="modal__close-button" data-modal-close>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+                <path fill="#0E0E0E" d="m5.39 25.2 19.8-19.8 1.41 1.4L6.8 26.6z"></path>
+                <path fill="#0E0E0E" d="m6.81 5.4 19.8 19.8-1.41 1.4L5.4 6.8z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__body"></div>
+        </div>
+      </div>
+    </template>
+    <div class="modal-background fixed-block" data-modal-close></div>
+    <script defer src="js/main.js"></script>
+    <div>
+      <style>
+        .pl {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        }
+        .pl .pl__trigger {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          bottom: 0;
+          left: 0;
+        }
+        .pl .pl__ctr {
+          position: absolute;
+          bottom: 40px;
+          left: 0;
+          background-color: #fff;
+          display: none;
+        }
+        .pl._v .pl__ctr {
+          display: block;
+        }
+        .pl a {
+          display: block;
+          padding: 4px 8px;
+        }
+      </style>
+      <div class="pl" title="pages list">
+        <div class="pl__trigger"></div>
+        <div class="pl__ctr"><a href="on-map.html">on-map <b> <small>(on-map)</small></b></a><a href="contacts.html">contacts <b> <small>(contacts)</small></b></a><a href="index.html">index <b> <small>(index)</small></b></a><a href="news-page.html">news <b> <small>(news-page)</small></b></a><a href="policy.html">policy <b> <small>(policy)</small></b></a><a href="404.html">404<b> <small>(404)</small></b></a><a href="thanks.html">thanks<b> <small>(thanks)</small></b></a><a href="about-company.html">about-company<b> </b><small>(about)</small></a><a href="our-partners.html">our-partners<b> <small>(our-partners)</small></b></a><a href="newuipage.html">new-ui<b> <small>(new-ui)</small></b></a><a href="newprojectspage.html">new-projects<b> <small>(new-projects)</small></b></a><a href="n-project.html">new-project<b> <small>(new-project)</small></b></a></div>
+      </div>
+      <script>
+        (() => {
+        const pl = document.querySelector(".pl");
+        if (!pl) { return }
+        pl.querySelector('.pl__trigger').addEventListener('click', (e) => {
+          pl.classList.toggle('_v');
+        })
+        })();
+      </script>
+    </div>
+  </body>
+</html>

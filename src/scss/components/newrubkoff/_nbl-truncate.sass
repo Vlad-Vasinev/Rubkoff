@@ -1,0 +1,34 @@
+
+
+.truncate
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  transition: max-height 0.3s
+  overflow: hidden
+  max-height: aCalc(66)
+  +r($sm)
+    max-height: var(--truncate-height, auto) 
+  .n-p1
+    position: relative
+    .read-more._desktop
+      display: inline
+  &-wrapper 
+    display: flex 
+    flex-direction: column
+    gap: aCalc(40)
+    +r($sm)
+      gap: 0
+
+.truncate--line-clamped 
+  -webkit-line-clamp: 3
+  +r($sm)
+    -webkit-line-clamp: 5
+.truncate--expanded
+  max-height: var(--truncate-height-expanded, auto)
+  ._mobile._mobileSecond
+    display: none !important
+    +r($sm)
+      display: inline
+
+.end-marker-first, .end-marker-last
+  display: inline

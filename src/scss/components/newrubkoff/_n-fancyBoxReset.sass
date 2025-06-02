@@ -1,0 +1,62 @@
+.fancybox__backdrop
+  background-color: #0A0A0A
+
+.f-thumbs, .fancybox__toolbar__column.is-left, [data-fancybox-toggle-thumbs], [data-fancybox-toggle-fullscreen], [data-fancybox-toggle-slideshow], [data-panzoom-action]
+  display: none
+
+.f-thumbs
+  +r($sm)
+    display: initial
+
+.fancybox__nav
+  +r($sm)
+    display: none
+
+.fancybox__slide
+  padding: 0
+
+.fancybox__content
+  width: 74.84375vw !important
+  height: 100vh !important
+  +r($sm)
+    height: 282px !important
+    width: 100% !important
+
+.fancybox-image
+  object-fit: cover
+  height: 100vh !important
+  +r($sm)
+    height: 100% !important
+
+[data-fancybox-close]
+  margin-top: aCalc(24)
+  margin-right: aCalc(24)
+  width: aCalc(44)
+  height: aCalc(44)
+  border-radius: aCalc(4)
+  +r($sm)
+    margin-top: 0
+    width: 56px
+    height: 56px
+    margin-right: 16px
+    border-radius: 4px
+
+.f-button.is-next
+  margin-right: aCalc(24)
+  width: aCalc(44)
+  height: aCalc(44)
+  background-position: center
+  border-radius: aCalc(4)
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Crect x='44' y='44' width='44' height='44' rx='4' transform='rotate(180 44 44)' fill='black'/%3E%3Cpath d='M14.7275 21.5455L22.3639 21.5455L30.0003 21.5455M30.0003 21.5455L24.5457 27M30.0003 21.5455L24.5457 16.0909' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E")
+  svg, &::before
+    display: none
+
+.f-button.is-prev
+  margin-left: aCalc(24)
+  width: aCalc(44)
+  height: aCalc(44)
+  border-radius: aCalc(4)
+  background-position: center
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Crect width='44' height='44' rx='4' fill='black'/%3E%3Cpath d='M29.2725 22.4545L21.6361 22.4545L13.9997 22.4545M13.9997 22.4545L19.4543 17M13.9997 22.4545L19.4543 27.9091' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E")
+  svg, &::before
+    display: none

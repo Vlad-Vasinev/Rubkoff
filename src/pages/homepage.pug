@@ -1,0 +1,21 @@
+include ./utilities/_mixins
+doctype html
+html(lang="en")
+  head()
+    include ./shared/_head
+    <link rel="preload" as="image" media="(max-width:767px)" href="img/content/hb/00mp.webp"/>
+    <link rel="preload" as="image" media="(min-width:768px)" href="img/content/hb/00p.webp"/>
+  body    
+    header.header
+      include ./../components/newrubkoff/header/_header-pinnedNoTransparent
+
+    .page
+      include ../components/home-page/_home
+      include ../components/newrubkoff/blocks/_nbl-cookies
+
+    include ./../components/newrubkoff/footer/_footer
+    include ./../components/modals/_modals
+
+    block scripts
+      include ./shared/_scripts
+    include ./shared/_pages-list

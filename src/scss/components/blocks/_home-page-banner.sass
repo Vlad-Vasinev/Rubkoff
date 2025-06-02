@@ -1,0 +1,80 @@
+.home-page-banner
+  +aProp(height, 817)
+  position: relative
+  color: #fff
+  +mob
+    height: 534px
+  .home-page-banner__bg-img
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .home-page-banner__front
+    position: relative
+    z-index: 1
+    display: grid
+    width: 100%
+    height: 100%
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr auto
+    padding: aCalc(40)
+    padding-top: var(--header-height)
+    +mob
+      grid-template-rows: auto 1fr auto
+      padding: 24px 16px
+      padding-top: var(--header-height)
+    .home-page-banner__logo
+      width: 100%
+      +dsk
+        padding: aCalc(44) 0 aCalc(40)
+        align-self: flex-start
+      +mob
+        padding-top: 16px
+        height: max-content
+        grid-column: 1/-1
+      img
+        width: 100%
+    .home-page-banner__tagline
+      +aProp(font-size, 40)
+      line-height: normal
+      align-self: flex-end
+      grid-column-start: 1
+      color: #161616
+      +aProp(margin-bottom, 322)
+      +mob
+        align-self: flex-start
+        margin-bottom: 0
+        line-height: normal
+        grid-column: 1/-1
+        margin-top: 16px
+        font-size: 20px
+      span
+        text-transform: uppercase
+    .home-page-banner__bottom-tag.home-page-banner__bottom-tag-first
+      +mob
+        justify-self: start
+    .home-page-banner__bottom-tag
+      text-transform: uppercase
+      border-radius: aCalc(12)
+      color: #000000
+      font-size: aCalc(16)
+      font-weight: 400
+      line-height: aCalc(20)
+      padding: aCalc(8) aCalc(16)
+      background-color: #D5B38E
+      max-width: max-content
+      width: 100%
+      .h5
+        text-align: center
+      +mob
+        padding: 4px 10px
+        border-radius: 6px
+        justify-self: end
+        .h5
+          font-size: 12px
+  .home-page-banner__bottom-tag
+    grid-row-start: 3

@@ -1,0 +1,65 @@
+.partners-link 
+  width: 50%
+  border-radius: aCalc(12)
+  background-color: $ErrigalWhite
+  padding: aCalc(30)
+  height: aCalc(480)
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  +r($sm)
+    position: relative
+    width: 100%
+    gap: 32px
+    padding: 16px
+    border-radius: 12px
+    height: unset
+  &:hover 
+    .slide-button.slide-button_horizontal
+      .slide-button-inner
+        & > span
+          transform: translateX(0)
+          transition: transform 0.4s 0.05s, color 0.3s
+          &:nth-child(2)
+            top: 0
+            left: 100%
+      &
+        +dsk
+          .slide-button-inner
+            & > span
+              transform: translateX(-100%)
+  &__top 
+    display: flex
+    flex-direction: column
+    gap: aCalc(16)
+    +r($sm)
+      gap: 16px
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    .h4 
+      max-width: aCalc(646)
+      +r($sm)
+        max-width: unset
+    .slide-button.slide-button_horizontal
+      flex-shrink: 0
+      background-color: $White
+      padding: aCalc(16) 
+      border-radius: 50%
+      width: aCalc(56)
+      height: aCalc(56)
+      transform: rotate(180deg)
+      +r($sm)
+        position: absolute
+        right: 16px
+        top: 16px
+        width: 32px
+        height: 32px
+        padding: 8px
+      svg 
+        width: aCalc(24)
+        height: aCalc(24)
+        +r($sm)
+          width: 16px
+          height: 16px

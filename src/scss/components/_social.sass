@@ -1,0 +1,66 @@
+// placed in the footer
+  
+.social-block 
+  display: flex
+  flex-direction: column  
+  ul 
+    display: flex
+    flex-grow: 2
+    align-content: end
+    justify-content: space-between
+    li
+      flex-grow: 2
+      align-content: end
+  .social-partner 
+    flex-grow: 2
+    align-content: end
+
+.social-links
+  display: flex
+  flex-direction: column
+  gap: aCalc(8)
+  a 
+    display: flex
+    align-items: center
+    gap: aCalc(8)
+    +r($sm)
+      gap: 6px
+    transition: color .3s
+    &:hover 
+      color: $LightGreen
+    svg 
+      width: aCalc(24)
+      height: aCalc(24)
+      +r($sm) 
+        width: 20px
+        height: 20px
+
+.social-partner 
+  +r($sm)
+    display: none
+  img   
+    width: aCalc(150)
+    height: aCalc(40)
+    margin-bottom: aCalc(8)
+    object-fit: contain
+  p 
+    color: $ExistentialAngst
+    opacity: 0.5
+
+.social-address
+  display: flex
+  flex-direction: column
+  gap: aCalc(8)
+  +r($sm) 
+    gap: 8px
+  div 
+    display: flex
+    gap: aCalc(6)
+    +r($sm)
+      gap: 6px
+    a.social-address__colored
+      color: $LightGreen
+    span 
+      height: 100%
+      width: 1px 
+      background-color: $ExistentialAngst

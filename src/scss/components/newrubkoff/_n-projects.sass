@@ -1,0 +1,80 @@
+
+.n-projects
+  display: flex
+  flex-direction: column
+  margin: 0 aCalc(0) 0
+  +r($sm)
+    margin: 0 aCalc(0) 60px
+  &.mobMargin 
+    +r($sm)
+      margin: 60px 0 60px
+  &.mobMargin.mobBorder 
+    +r($sm)
+      padding-bottom: 60px 
+      margin-bottom: 0
+      border-bottom: 1px solid #F1F1F1
+  &__el 
+    position: relative
+    +r($sm)
+      margin-bottom: 64px
+    &.borderNo 
+      &:last-child
+        &::after
+          display: none
+    &::after
+      position: absolute
+      content: ""
+      top: 0
+      width: 100vw
+      left: aCalc(-40)
+      right: 0
+      border-top: 1px solid #F1F1F1
+      +r($sm)
+        display: none
+    &:last-child
+      margin-bottom: 0
+      &::after
+        position: absolute
+        content: ""
+        bottom: 0
+        width: 100vw
+        left: aCalc(-40)
+        right: 0
+        border-bottom: 1px solid #F1F1F1
+        +r($sm)
+          display: none
+  .n-cardSlider, .nbl-card__info
+    margin: aCalc(40) 0
+    +r($sm)
+      margin: 0
+    &._bottomBig
+      margin: aCalc(40) 0 aCalc(180)
+      +r($sm)
+        margin: 0
+  .n-cardSlider 
+    position: relative
+    +r($sm)
+      margin: 0
+    .n-cardSlider__button
+      opacity: 0
+      transition: opacity .3s
+      width: aCalc(44)
+      height: aCalc(44)
+      +r($sm)
+        display: none
+      &::after 
+        display: none
+      &._active 
+        opacity: 1
+    .swiper-button-next
+      right: aCalc(32)
+      img 
+        transform: rotate(180deg)
+      &.swiper-button-disabled
+        img
+          opacity: 0.5
+    .swiper-button-prev
+      left: aCalc(16)
+      &.swiper-button-disabled
+        img
+          opacity: 0.5

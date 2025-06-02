@@ -1,0 +1,24 @@
+@use "sass:selector";
+@import "./vendor/normalize";
+
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox"; 
+@import "../../node_modules/@fancyapps/ui/dist/carousel/carousel"; 
+@import "../../node_modules/@fancyapps/ui/dist/carousel/carousel.thumbs"; 
+@import "../../node_modules/@fancyapps/ui/dist/carousel/carousel.autoplay"; 
+
+
+$mobileLayout: true; 
+$desktopLayout: true; 
+
+@import "vars";
+@import "mixins/*";
+@import "fonts";
+@import "general";
+@import "ui";
+
+@import "./components/blocks/*.sass";
+@import "./components/*.sass";
+@import "./components/newrubkoff/*.sass";
+

@@ -1,0 +1,74 @@
+
+.nbl-mapSelect 
+  margin-top: aCalc(40)
+  display: flex
+  gap: aCalc(2)
+  &__item
+    display: flex
+    align-items: center
+    gap: aCalc(5)
+    height: aCalc(41)
+    transition: background-color .3s
+    background-color: #ffffff
+    border-radius: aCalc(6)
+    padding: aCalc(13) aCalc(16)
+    &._active
+      background-color: #CED0DC
+    div
+      width: aCalc(9)
+      height: aCalc(9)
+      background-color: #2E5E5E
+      transition: transform .3s, width .3s, height .3s
+      &._active 
+        width: 0
+        height: 0
+        transform: scale(0)
+    span 
+      font-size: aCalc(15)
+      line-height: 100%
+      text-transform: uppercase
+      margin-left: aCalc(5)
+      transition: margin .3s
+      color: #0A0A0A
+      &._active 
+        margin-left: 0
+  &__item:nth-child(2)
+    div
+      background-color: #2E5E5E
+  &__item:nth-child(3)
+    div
+      background-color: #D5B38E
+
+
+.map-block .nbl-map.js-ymap.n-js-ymap
+  height: aCalc(1000) !important
+  +r($sm)
+    height: 375px
+
+.nbl-onMap
+  .js-ymap
+    position: relative
+    .nbl-cardPreview
+      z-index: 1
+      width: aCalc(432)
+      position: absolute
+      top: aCalc(40)
+      left: aCalc(40)
+      +r($sm)
+        display: none
+  .page-block-heading 
+    .n-h1 
+      color: #2E5E5E
+  .page-block-heading, .map-block__flt-ctr
+    margin-left: 26.71875%
+    +r($sm)
+      margin-left: unset
+      padding: 0 12px
+  .map-block__flt-ctr
+    +r($sm)
+      overflow-x: scroll
+      width: 100%
+      scrollbar-width: none
+      -webkit-box-pack: start
+  .ymaps-2-1-79-map-copyrights-promo, .ymaps-2-1-79-controls__control
+    display: none

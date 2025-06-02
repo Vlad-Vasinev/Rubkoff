@@ -1,0 +1,50 @@
+
+.inside-inspiration
+  padding: aCalc(80) aCalc(40)
+  background-color: $ColdStone
+  height: aCalc(900)
+  display: flex
+  // justify-content: space-between
+  justify-content: flex-start
+  +r($sm)
+    padding: 40px 16px
+    justify-content: space-between
+    flex-direction: column
+    height: unset
+  &__auth
+    flex-shrink: 0
+    +r($sm)
+      order: 1
+    img, video
+      width: aCalc(280)
+      height: aCalc(378)
+      object-fit: cover
+      border-radius: aCalc(6)
+      margin-bottom: aCalc(24)
+      +r($sm)
+        width: 181px
+        height: 245px
+        border-radius: 6px
+        margin-bottom: 12px
+    .h3 
+      margin-bottom: aCalc(6)
+      +r($sm)
+        margin-bottom: 6px
+  &__content
+    max-width: aCalc(678)
+    margin-left: aCalc(650)
+    +r($sm) 
+      max-width: unset
+      margin-right: unset
+      margin-left: unset
+      margin-bottom: 40px
+    .h2 
+      font-size: aCalc(38)
+      font-weight: 500
+      line-height: 100%
+      letter-spacing: -1.14px
+      margin-bottom: aCalc(30)
+      +r($sm)
+        font-size: 22px
+        line-height: 110%
+        margin-bottom: 0

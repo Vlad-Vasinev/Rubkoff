@@ -1,0 +1,124 @@
+
+.marked-title
+  color: #000000
+  font-weight: 600
+
+  span
+    display: inline-block
+    background-color: #FCC65D
+    padding: aCalc(2) aCalc(8)
+    border-radius: aCalc(12)
+    +mob
+      border-radius: 8px
+      padding: 1px 6.5px
+
+.independent-form
+  background-color: #ffffff
+  +dsk
+    padding: aCalc(40) aCalc(234)
+    border-radius: aCalc(12)
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12)
+  +mob
+    border-radius: 12px
+    padding: 0
+  .independent-form__top
+    margin-bottom: aCalc(32)
+    +mob
+      margin-bottom: 16px
+
+  .independent-form__body
+    button, .button
+      width: 100%
+      margin-bottom: aCalc(16)
+      +mob
+        margin-bottom: 16px
+    .form-policy
+      text-align: center
+.special-offers-banner
+  border-radius: aCalc(12)
+  background: #E4E6F3
+  padding: aCalc(24)
+  +mob
+    border-radius: 12px
+    padding: 16px 15px
+  .special-offers-banner__title
+    +dsk
+      display: none
+    +mob
+      margin-bottom: 16px
+  .special-offers-banner__inner
+    display: grid
+    gap: aCalc(20)
+    justify-content: center
+    grid-template-columns: repeat(2, 1fr)
+    +mob
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    .special-offers-banner__el
+      position: relative
+      height: 100%
+      box-sizing: border-box
+      padding: aCalc(32)
+    
+      width: 100%
+      border-radius: 12px
+      border: 1px solid #D0D3E4
+      background-color: transparent
+      transition: all .3s
+      +mob
+        max-width: 100%
+        margin-top: 18px
+        padding: 16px 17px
+        box-shadow: none
+    .special-offers-banner__subtitle
+      color: #161616
+      font-size: aCalc(26)
+      font-style: normal
+      font-weight: 600
+      line-height: aCalc(32)
+      margin-bottom: aCalc(16)
+      +dsk
+        width: calc(100% - aCalc(60))
+      +mob
+        font-size: 20px
+        line-height: 24px
+        padding-right: 62px
+    .special-offers-banner__info
+      font-size: aCalc(16)
+      font-style: normal
+      font-weight: 400
+      line-height: aCalc(20)
+      +dsk
+        width: calc(100% - aCalc(60))
+      +mob
+        padding-right: 62px
+        font-size: 12px
+        line-height: 16px
+    .special-offers-banner__icon
+      position: absolute
+      bottom: 32px
+      right: 32px
+      +mob
+        right: 16px
+        bottom: 16px
+      img
+        width: aCalc(70)
+        height: auto
+        +mob
+          width: 62px
+    .special-offers-banner__item
+      &[data-modal-open], &[href]
+        transition: all .3s
+        &:hover
+          +dsk
+            .special-offers-banner__el
+              cursor: pointer
+              box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.25)
+              background-color: EDEFFB
+              transform: translateY(-10px)
+      &-form
+        grid-column: 1/3
+        +mob
+          grid-column: unset

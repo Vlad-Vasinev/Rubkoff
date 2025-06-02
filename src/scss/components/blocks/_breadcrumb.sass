@@ -1,0 +1,89 @@
+.breadcrumb
+  
+  color: #9D9D9D
+  &.grey 
+    svg 
+      opacity: 0.2
+      path 
+        fill: #000000
+    .n-h6 
+      opacity: 0.2
+      color: #000000
+  & ul
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    gap: aCalc(22)
+    list-style: none
+    margin: 0
+    padding: 0
+    +r($sm)
+      gap: 22px
+  & li 
+    text-transform: uppercase
+    position: relative
+    .n-h6 
+      color: $White
+  & li a, span
+    text-transform: uppercase
+  & li:not(:last-child)
+    position: relative
+    padding-right: aCalc(4)
+    +r($sm)
+      padding-right: 0
+    &::after 
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      margin: 0
+      right: aCalc(-13)
+      z-index: 10
+      content: ""
+      width: aCalc(4)
+      height: aCalc(4)
+      border-radius: aCalc(8)
+      background-color: #D9D9D9
+      +r($sm)
+        width: 2px
+        height: 2px
+        border-radius: 8px
+        right: -13px
+  & li:not(:last-child)::after
+    display: inline-block
+
+.page__breadcrumb
+  padding-bottom: aCalc(60)
+  +mob
+    padding-bottom: 32px
+  &_overlay
+    &._mobNone 
+      +r($sm)
+        display: none
+    &._big 
+      padding-left:  aCalc(40)
+      padding-right:  aCalc(40)
+      padding-top: aCalc(92)
+      padding-bottom: aCalc(180)
+      +r($sm)
+        padding-bottom: 24px
+        padding-left:  12px
+        padding-right:  12px
+        padding-top: 17px
+    +dsk
+      z-index: 1
+      width: 100%
+      +aProp(--plus-padding, 24)
+      padding: 0
+      padding-top: aCalc(218)
+      padding-right: aCalc(40)
+      padding-bottom: aCalc(160)
+
+    +mob
+      padding-left: 0
+      padding-right: 0
+      padding-top: 16px
+      padding-bottom: 60px
+    .breadcrumb
+      color: #BFBFBF
+      +mob
+        color: #9D9D9D

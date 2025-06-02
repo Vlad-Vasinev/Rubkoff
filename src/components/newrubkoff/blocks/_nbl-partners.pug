@@ -1,0 +1,17 @@
+ul.our-partners__list 
+  - var c = 0;  
+  while c < 14
+    - var imgSrc=["/img/newrubkoff/partners/partner-1.png","/img/newrubkoff/partners/partner-2.png","/img/newrubkoff/partners/partner-3.png","/img/newrubkoff/partners/partner-1.png","/img/newrubkoff/partners/partner-5.png","/img/newrubkoff/partners/partner-2.png","/img/newrubkoff/partners/partner-7.png","/img/newrubkoff/partners/partner-8.png","/img/newrubkoff/partners/partner-3.png","/img/newrubkoff/partners/partner-10.png","/img/newrubkoff/partners/partner-1.png","/img/newrubkoff/partners/partner-2.png","/img/newrubkoff/partners/partner-3.png","/img/newrubkoff/partners/partner-14.png"]
+    li.our-partners__el 
+      a.our-partners__logo(href="#")
+        img(src=imgSrc[c] alt="")
+      .our-partners__info
+        |The largest enterprise in the European part of Russia for the production of
+        |autoclaved aerated concrete with a capacity of 500 thousand cubic meters per year.
+    - c++
+  li.our-partners__el.mobHidd
+    a.our-partners__logo(href="#")
+    .our-partners__info
+  li.our-partners__el.mobHidd
+    a.our-partners__logo(href="#")
+    .our-partners__info

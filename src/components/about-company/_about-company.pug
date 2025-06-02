@@ -1,0 +1,92 @@
+block vars 
+  - var breadcrumbText = ["About company"]
+.page__container
+  section
+    .n-bgContent()
+      include ../blocks/_breadcrumb
+      .n-bgContent__cover._img 
+        img(src="/img/newrubkoff/content-cover.png" alt="") 
+      <video class="" loop muted="muted" autoplay="autoplay" playsinline webkit-playsinline preload="auto" poster="/img/newrubkoff/company.jpg">
+        <source src="img/newrubkoff/video/about2.webm" type="video/webm">
+        <source src="img/newrubkoff/video/about2.mp4" type="video/mp4">
+      </video>
+      .n-galleryProjectBtn
+        .n-galleryProjectBtn__top.vertical 
+          .n-h1 About company
+          .n-h5 
+            |Over 15 years, we have built more than 700 houses - each of them has a story of a family,
+            |who dreamed of a warm, safe corner away from the bustle of the city.
+
+  section.page__block.page__block_header-offset._bottomMobBorder
+    .blocks-border._noBorder
+      .block-border._project  
+        .block-border__preview
+          - var h2Text = "equipment"
+          - var imgSrc = "/img/newrubkoff/girl-1.jpg"
+          - var h3Text = "Victoria Chudnaya"
+          - var pText = "We work individually on each task, realizing all your wishes. Taking into account your needs, we are ready to make changes to each project."
+          .nbl-peoplePreview
+            .nbl-peoplePreview__main
+              img(src=imgSrc alt="")
+              <div class="nbl-peoplePreview__main-info">
+                .n-h2._mob=h2Text
+                <div>
+                  .n-h3=h3Text
+                  .n-p2._opacity Expert Rubkoff
+                </div>
+              </div>
+        .block-border__main
+          .block-border__main-content
+            .project-contentBlock._text 
+              .n-p3
+                |"Rubkoff" is a team that approaches the construction of country houses with soul.
+                |We combine creative ideas and professional skills to create a cozy space,
+                |where every detail is thought out for your comfort.
+              .n-p3
+                |We value your time and strive to make the construction process as comfortable as possible, offering a full range of services - from the first
+                |sketches to a finished house that you want to return to.
+            //-include ../newrubkoff/blocks/_nbl-productContentText
+    .nbl-imgVideo._marginMob
+      img(src="/img/newrubkoff/team.jpg" alt="")
+    .blocks-border._noBorder
+      .block-border._project._marginMob   
+        .block-border__preview
+          .nbl-peoplePreview._text.marMobNo._noMobPadding
+            .n-h2 a team that approaches the construction of country houses with soul.
+            .n-h3
+              |We combine creative ideas and professional skills to create a cozy
+              |space, where every detail is thought out for your comfort.
+        .block-border__main._marginBottom 
+          ._margTop
+            .nbl-imgVideo
+              img(src="/img/newrubkoff/house1.jpg" alt="")
+            .nbl-imgVideo._mixed 
+              .nbl-imgVideo__wrapper
+                <video class="" loop muted="muted" autoplay="autoplay" playsinline webkit-playsinline preload="auto" poster="img/video2-prev.jpg">
+                  <source src="img/newrubkoff/video/dmvideo.webm" type="video/webm">
+                  <source src="img/newrubkoff/video/dmvideo.mp4" type="video/mp4">
+                </video>
+                img(src="/img/newrubkoff/house3.jpg" alt="")
+    .blocks-border._noMobPadding
+      .block-border._project  
+        .block-border__preview
+          .nbl-peoplePreview._text.marMobNo._noMobPadding
+            .n-h2 Team
+            .n-h3
+              |Together we create and implement a functional,
+              |comfortable and harmonious country environment..
+        .block-border__main._noPaddingTop
+          ._margTop
+            .mesh-block-slider.swiper-container
+              .mesh-block.swiper-wrapper
+                - var cImages = ["img/newrubkoff/sl1.jpg", "img/newrubkoff/sl2.jpg", "img/newrubkoff/sl1.jpg", "img/newrubkoff/sl2.jpg", "img/newrubkoff/sl1.jpg", "img/newrubkoff/sl2.jpg", "img/newrubkoff/sl1.jpg", "img/newrubkoff/sl2.jpg"];  
+                - var c = 0;  
+                while c < 8
+                  .mesh-item.swiper-slide
+                    .mesh-item__img(data-lazy) 
+                      img(data-src=cImages[c] alt="")
+                    .h5 Dmitry Kiselev
+                    .h6 General manager
+                  - c++
+
+include ../newrubkoff/blocks/_nbl-end

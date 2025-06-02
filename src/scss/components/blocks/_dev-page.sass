@@ -1,0 +1,102 @@
+
+
+.dev-page
+  .video-block
+    overflow: hidden
+    position: relative
+    .mission-block
+      display: block
+    .mission-block__el
+      position: absolute
+      display: block
+      z-index: 100
+      transition: top .3s
+      +r($sm)
+        display: none
+    .mission-block__item
+      background: #00000033
+      width: aCalc(340)
+      height: aCalc(274)
+      border-radius: aCalc(12)
+      padding: aCalc(24)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .project-heading
+      +r($sm)
+        height: 392px
+  .service-block
+    .h2 
+      text-align: center
+      margin-bottom: aCalc(40)
+      +r($sm)
+        text-align: left
+        margin-bottom: 16px
+    .h4 
+      text-align: center
+      max-width: aCalc(772)
+      margin: 0 auto aCalc(32)
+      +r($sm)
+        text-align: left
+        max-width: unset
+        margin: 0 auto 0
+    .accordeon-control 
+      margin: 0 auto
+      .h2 
+        margin-bottom: 0
+        +r($sm)
+          text-align: center
+  .team-block 
+    margin-top: aCalc(180)
+    +r($sm)
+      margin-top: 60px
+  .title-block 
+    margin-bottom: aCalc(40)
+    +r($sm)
+      margin-top: 26px
+      margin-bottom: 40px
+    &__top 
+      margin-bottom: aCalc(60)
+      +r($sm)
+        margin-bottom: 16px
+      .h1 
+        max-width: aCalc(1240)
+        text-align: center
+        margin: 0 auto
+        +r($sm)
+          text-align: left 
+          max-width: unset
+    &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      +r($sm)
+        flex-direction: column
+        align-items: flex-start
+        gap: 16px
+      .overlap-mesh
+        +r($sm)
+          order: 1
+        .overlap-item 
+          +r($sm)
+            width: 80px 
+            height: 80px
+          img
+            +r($sm)
+              width: 80px 
+              height: 80px
+  .title-block.page__block
+    padding-top: 0 !important
+    margin-top: aCalc(20)
+    +r($sm)
+      margin-top: 24px
+      padding-top: 0 !important
+  .page__breadcrumb
+    +r($sm)
+      display: none
+  .partners-block
+    display: flex
+    gap: aCalc(20)
+    +r($sm)
+      flex-direction: column
+      gap: 16px

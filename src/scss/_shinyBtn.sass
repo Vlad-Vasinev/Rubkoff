@@ -1,0 +1,29 @@
+
+.shinyBtn
+  overflow: hidden
+  position: relative  
+  @include gradient-safari-mixin
+
+.shinyBtn:before
+  content: ''
+  position: absolute
+  width: 89%
+  height: 100%
+  top: -1px
+  z-index: -1
+  background: linear-gradient( rgba(255,255,255,0) 0%,rgba(69, 151, 151,0.75) 50%,rgba(255,255,255,0) 100%)
+  background-repeat: no-repeat
+  right: 30px
+  animation: runn-gradient 2s infinite
+  opacity: 1
+  transform: rotate(-45deg)
+  transition: opacity 0.2s, visibility 0s 0.31s
+
+  @keyframes runn-gradient
+    0%
+      right: 100%
+    60%, 100%
+      right: -70%
+
+
+

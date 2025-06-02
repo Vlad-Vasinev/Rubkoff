@@ -1,0 +1,75 @@
+block vars 
+  - var breadcrumbText = ["Main", "houses made of laminated timber"]
+.page.n-news-page.no-section-mg 
+        
+  .page__container
+    .page__breadcrumb.page__breadcrumb_overlay._big
+      include ../../blocks/_breadcrumbgrey
+
+    .n-links-project
+      .n-header-drop__ul 
+        a._icon(href="#")
+          .n-button1 projects 
+          .n-button1 80000
+        a.n-button1(href="#") Stone houses
+        a.n-button1(href="#") Houses made of laminated timber
+        a._icon(href="#")
+          .n-button1 Built houses
+          .n-button1 436
+        a.n-button1(href="#") Interior decoration
+        
+    section.page__block
+      .nbl-textTruncate
+        .n-h1 Houses made of laminated timber
+        .truncate-wrapper
+          .n-links-project._desk
+            .n-header-drop__ul
+              a._icon(href="#")
+                .n-button1 Stone houses
+                .n-button1 32
+              a._icon(href="#")
+                .n-button1 Houses made of laminated timber 
+                .n-button1 52
+              a._icon(href="#")
+                .n-button1 Built houses
+                .n-button1 436
+              a._icon(href="#")
+                .n-button1 houses for sale
+                .n-button1 6
+              a.n-button1(href="#") Our villages
+          .truncate.truncate--line-clamped
+            .n-p1
+              |The 876 square meter house is the perfect embodiment of
+              |country life luxury. Stylish and elegant two-story house
+              |offers everything you need for comfortable living and.
+              |offers everything you need for comfortable living and.
+              .end-marker-first
+                .n-button1.read-more._desktop Read more
+              <br/>
+              <br/>
+                |The two-storey house P371 is a luxurious place for country life,
+                |where comfort and coziness are combined with elegance and style.
+                |The project offers many opportunities for entertainment and recreation, and
+                |also creates an ideal environment for enjoying nature and spending
+                |quality time with loved ones.
+              <br/>
+              <br/>
+                |The first floor of the house offers many opportunities for entertainment.
+                |There is a large cinema at your disposal, where you can enjoy
+                |watching movies in a cozy and comfortable environment.
+                |A billiard area and a gym with access to the terrace.
+                |A spa area block with a steam room and a hammam, continuing on a separate terrace
+                |is a unique opportunity to relax and enjoy peace and harmony.
+
+    section.page__block.page__block_full-w-mob._noMargin.paddingMobSm
+      .n-projects
+        .n-projects__el
+          include ../blocks/_nbl-card
+        .n-projects__el
+          include ../blocks/_nbl-card
+        .n-projects__el
+          include ../blocks/_nbl-card
+
+include ../blocks/_nbl-pagination
+  
+include ../blocks/_nbl-end

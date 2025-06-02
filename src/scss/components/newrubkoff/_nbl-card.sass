@@ -1,0 +1,56 @@
+
+.nbl-card
+  display: flex
+  gap: aCalc(40)
+  +r($sm)
+    gap: 24px
+    flex-direction: column
+  &._imgFirst
+    .nbl-card__info 
+      +r($sm)
+        order: 1
+    .nbl-card__content  
+      +r($sm)
+        order: 0
+  &__info 
+    display: flex
+    flex-direction: column
+    width: aCalc(393)
+    gap: aCalc(24)
+    flex-shrink: 0
+    +r($sm)
+      width: unset
+      gap: 20px
+      padding: 0 12px
+      order: 2
+    .n-badgeIconsMesh
+      +r($sm)
+        display: none
+    &._noGap 
+      //gap: 0
+      .n-h2
+        //margin-bottom: aCalc(24)
+      .nbl-card__icon 
+        margin-top: aCalc(-7)
+        +r($sm)
+          margin-top: -7px
+  &__content 
+    padding-left: aCalc(40)
+    border-left: 1px solid #F1F1F1
+    +r($sm)
+      padding-left: 0
+      border-left: none
+      order: 3
+  &__icon 
+    width: aCalc(140)
+    height: aCalc(94)
+    +r($sm)
+      width: 104px
+      height: 70px
+    img 
+      object-fit: cover
+      width: auto
+      height: 100%
+      +r($sm)
+        width: 100%
+        height: auto

@@ -1,0 +1,186 @@
+
+.blocks-border 
+  position: relative
+  // +r($sm)
+  //   margin-bottom: 60px
+  &::before 
+    position: absolute
+    left: aCalc(-40)
+    content: ""
+    bottom: 0
+    width: 100vw
+    border-bottom: 1px solid #F4F4F4
+    +r($sm)
+      display: none
+  +r($sm)
+    padding: 0 12px
+  &._noMobPadding
+    +r($sm)
+      padding: 0
+  &._noBorder 
+    border-top: none
+    +r($sm)
+      padding: 0
+    &::before 
+      display: none
+    .block-border__main
+      border-left: none
+      &._marginBottom 
+        ._margTop
+          margin-top: 0
+          margin-bottom: aCalc(180) 
+          +r($sm)
+            margin-top: 24px
+            margin-bottom: 0
+    .block-border._project, .block-border
+      &::before 
+        display: none
+      .nbl-peoplePreview
+        margin-top: 0
+        &._noMobPadding
+          +r($sm)
+            padding: 0
+    .block-border__main 
+      ._margTop
+        margin-top: 24px
+      .block-border__main-content
+        margin-top: 0
+
+
+.block-border 
+  position: relative
+  display: flex
+  gap: aCalc(40)
+  +r($sm)
+    flex-direction: column
+    gap: 0
+  &::before 
+    position: absolute
+    left: aCalc(-40)
+    content: ""
+    top: 0
+    width: 100vw
+    border-top: 1px solid #F4F4F4
+    +r($sm)
+      display: none
+  &._scrollable
+  &._marginMob 
+    +r($sm)
+      margin: 60px 0
+  &._project
+    .nbl-peoplePreview
+      margin-top: aCalc(40)
+      +r($sm)
+        margin-top: 0
+        margin-bottom: 40px
+    .nbl-peoplePreview.marMobNo
+      +r($sm)
+        margin-bottom: 0
+        padding-left: 12px
+      &._noMobPadding
+        +r($sm)
+          padding: 0
+  .project-contentBlock._text-separated
+    margin-bottom: aCalc(120)
+    +r($sm)
+      margin-bottom: 52px
+      margin-bottom: 60px
+  &__preview
+    position: relative
+    width: aCalc(393)
+    flex-shrink: 0
+    +r($sm)
+      width: unset
+    .nbl-peoplePreview
+      width: aCalc(290)
+      +r($sm)
+        width: unset
+      &._text 
+        width: aCalc(393)
+        +r($sm)
+          width: unset
+    &-content 
+      margin: aCalc(40) 0
+      &._noMargin
+        margin-top: 0
+  &__main
+    padding-left: aCalc(40)
+    border-left: 1px solid #F4F4F4
+    +r($sm)
+      width: unset
+      padding-left: 0
+      border-left: none
+      padding: 0
+    &._noPadding
+      padding-left: 0
+      &._bottomBig
+        padding-bottom: aCalc(180)
+        width: 100%
+        +r($sm)
+          padding-bottom: 0
+    &._noPaddingTop
+      padding-top: 0
+    .nbl-imgVideo
+      margin-bottom: aCalc(2)
+      +r($sm)
+        margin-top: 2px
+        margin-bottom: 0
+        .nbl-imgVideo__wrapper
+          +r($sm)
+            display: flex
+            gap: 2px
+    ._margTop 
+      margin: aCalc(40) 0 0 0
+      overflow-x: hidden
+      +r($sm)
+        margin: 0
+        margin-top: 24px
+        overflow-x: visible
+      .mesh-block-slider
+        margin-bottom: aCalc(196)
+        +r($sm)
+          margin-bottom: 16px
+    &-content 
+      display: grid
+      grid-template-columns: repeat(2, aCalc(680))
+      grid-template-rows: auto 1fr
+      gap: aCalc(8)
+      margin: aCalc(40) 0
+      +r($sm)
+        gap: 8px
+        display: flex
+        flex-direction: column
+        margin: 0 0 1px 0
+      .project-contentBlock
+        width: unset
+      img, video 
+        width: 100%
+        height: 100%
+        object-fit: cover
+        +r($sm)
+          width: 100%
+          height: 351px
+      &._noMargin
+        margin-top: 0
+      .project-contentBlock._text 
+        margin-bottom: aCalc(112)
+        +r($sm)
+          margin-bottom: 0
+      .equip-table 
+        margin-top: 1px
+        //padding-left: aCalc(40)
+        +r($sm)
+          padding-left: 0
+          margin-left: -12px
+        .equip-table__col:first-child
+          .equip-table__row
+            position: relative
+        .equip-table__row
+          &:last-child
+            &::before 
+              display: none
+        .equip-table__col:last-child
+          .equip-table__row
+            border-right: none
+            +r($sm)
+              border-right: 1px solid $GrayBruh

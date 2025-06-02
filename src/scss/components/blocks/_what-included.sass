@@ -1,0 +1,32 @@
+.what-included-block
+  border-top: 1px solid $WhiteGray
+  
+  .h3, .h3
+    padding: aCalc(16) 0  
+    border-bottom: 1px solid $WhiteGray
+    font-weight: 600
+    +mob
+      padding: 16px 0  
+  ul 
+    li
+      padding: aCalc(12) 0
+      border-bottom: 1px solid $WhiteGray
+      display: grid
+      grid-template-columns: 1fr auto
+      +mob
+        grid-template-columns: auto
+        padding: 12px 0 
+      span
+        @extend .h6
+      span:nth-child(2n)
+        white-space: nowrap
+        +aProp(margin-left, 44)
+        +mob
+          margin-left: 0
+          margin-top: 4px
+  ul + .h3, ul + .h3
+    +aProp(margin-top, 40)
+    padding-top: 0
+    +mob
+      margin-top: 16px
+

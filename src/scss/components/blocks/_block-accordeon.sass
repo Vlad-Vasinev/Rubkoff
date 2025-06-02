@@ -1,0 +1,73 @@
+.block-accordeon
+  flex-shrink: 0
+  max-width: aCalc(910)
+  width: 100%
+  display: flex
+  flex-direction: column
+  +r($sm)
+    max-width: unset
+  &__el 
+    cursor: pointer
+    border-top: 1px solid $WhiteGray
+    padding: aCalc(40) 0
+    +r($sm)
+      padding: 18px 0
+    &-wrapper
+      display: flex
+      justify-content: space-between
+    .block-accordeon__list
+      overflow: hidden
+      pointer-events: none
+      max-height: 0
+      margin-top: 0
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), margin .3s
+    &.block-accordeon_active
+      .block-accordeon__list
+        margin-top: aCalc(25)
+        max-height: 1000px
+        transition: max-height .6s ease-in-out, margin .3s
+        +r($sm)
+          margin-top: 16px
+          max-height: 1000px
+  &__el:last-child
+    border-bottom: 1px solid $WhiteGray
+  &__icon 
+    display: grid 
+    justify-content: center
+    align-items: center
+    background-color: $ExistentialAngst
+    width: aCalc(32)
+    height: aCalc(32)
+    border-radius: aCalc(40)
+    transition: background .3s, transform .3s
+    position: relative
+    flex-shrink: 0
+    &_active 
+      background-color: $LightGreen
+      svg  
+        transform: rotate(-90deg)
+    +r($sm)
+      width: 24px
+      height: 24px
+      border-radius: 40px
+    div 
+      position: absolute
+      width: aCalc(12)
+      height: aCalc(2)
+      background-color: $White
+      z-index: 10
+      transition: transform .3s, width .3s
+    div:first-child
+      transform-origin: left
+      left: 50%
+      transform: translateX(-50%)
+    div:last-child
+      left: 50%
+      transform: translateX(-50%) rotate(90deg)
+    svg 
+      width: aCalc(24)
+      height: aCalc(24)
+      transition: transform .3s
+      +r($sm)
+        width: 18px
+        height: 18px

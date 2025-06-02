@@ -1,0 +1,51 @@
+
+.project-contentBlock
+  width: aCalc(954)
+  position: relative
+  margin-bottom: aCalc(130)
+  +r($sm)
+    width: 100%
+    margin-bottom: 60px
+  ._label 
+    position: absolute
+    top: aCalc(12)
+    left: aCalc(12)
+    padding: aCalc(6) aCalc(10)
+    border-radius: aCalc(4)
+    background-color: #CED0DC
+    +r($sm)
+      top: 8px
+      padding: 4px 8px
+      border-radius: 4px
+      left: 8px
+  &._text-separated 
+    width: unset
+    grid-column: span 2
+    .n-character
+      .n-h6:last-child 
+        width: aCalc(680)
+  &.single-content
+    width: unset
+    height: aCalc(672)
+    grid-column: span 2
+    +r($sm)
+      height: 351px
+  img, video 
+    object-fit: cover
+    width: 100%
+    height: 100%
+  &__badge 
+    position: absolute
+    left: aCalc(12)
+    top: aCalc(12)
+    border-radius: aCalc(4)
+    padding: aCalc(6) aCalc(10)
+    background-color: $ColdStone
+  .n-p3 + .n-p3 
+    margin-top: aCalc(60)
+    +r($sm)
+      margin-top: 24px
+  .n-p1 + .n-p1 
+    margin-top: aCalc(24)
+    +r($sm)
+      margin-top: 24px

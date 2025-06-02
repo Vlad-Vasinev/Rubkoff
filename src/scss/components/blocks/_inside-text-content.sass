@@ -1,0 +1,35 @@
+.inside-text-content
+  &__info 
+    display: flex
+    justify-content: space-between
+    margin-bottom: aCalc(40)
+    +r($sm)
+      flex-direction: column
+      gap: 24px
+      margin-bottom: 24px
+    h1, .h1 
+      max-width: aCalc(641)
+      +r($sm)
+        max-width: unset
+  &__about 
+    max-width: aCalc(445)
+    display: flex
+    justify-content: space-between
+    align-self: flex-end
+    gap: aCalc(46)
+    +r($sm)
+      align-self: flex-start
+      max-width: unset
+      gap: 0
+    h6, .h6 
+      max-width: aCalc(360)
+      +r($sm)
+        max-width: unset
+    svg 
+      width: aCalc(40)
+      height: aCalc(40)
+      align-self: flex-end
+      flex-shrink: 0
+      +r($sm)
+        width: 32px
+        height: 32px

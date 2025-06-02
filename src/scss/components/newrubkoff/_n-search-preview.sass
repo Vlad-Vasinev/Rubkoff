@@ -1,0 +1,25 @@
+
+.n-search-mesh 
+  display: flex
+  gap: aCalc(20)
+  +r($sm)
+    flex-direction: column
+    gap: 16px
+
+.n-search-preview 
+  +r($sm)
+    display: flex
+    gap: 12px
+  img, video 
+    width: aCalc(186)
+    height: aCalc(140)
+    margin-bottom: aCalc(12)
+    +r($sm)
+      width: 96px
+      height: 72px
+      border-radius: 2px
+  .n-search-preview__info 
+  .h4 
+    margin-bottom: aCalc(6)
+    +r($sm)
+      margin-bottom: 6px

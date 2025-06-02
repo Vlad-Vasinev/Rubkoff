@@ -1,0 +1,110 @@
+div
+  style.
+    .pl {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    }
+    .pl .pl__trigger {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 0;
+      left: 0;
+    }
+    .pl .pl__ctr {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      background-color: #fff;
+      display: none;
+    }
+    .pl._v .pl__ctr {
+      display: block;
+    }
+    .pl a {
+      display: block;
+      padding: 4px 8px;
+    }
+  .pl(title='pages list')
+    .pl__trigger
+    .pl__ctr
+
+      a(href='on-map.html')
+        | on-map 
+        b 
+          small (on-map)
+      a(href='contacts.html')
+        | contacts 
+        b 
+          small (contacts)
+      a(href='index.html')
+        | index 
+        b 
+          small (index)
+      a(href='news-page.html')
+        | news 
+        b 
+          small (news-page)
+      a(href='policy.html')
+        | policy 
+        b 
+          small (policy)
+      a(href='404.html')
+        | 404
+        b 
+          small (404)
+      a(href='thanks.html')
+        | thanks
+        b 
+          small (thanks)
+      a(href='about-company.html')
+        | about-company
+        b 
+        small (about)
+      a(href='our-partners.html')
+        | our-partners
+        b 
+          small (our-partners)
+      a(href='newuipage.html')
+        | new-ui
+        b 
+          small (new-ui)
+      a(href='newprojectspage.html')
+        | new-projects
+        b 
+          small (new-projects)
+      a(href='n-project.html')
+        | new-project
+        b 
+          small (new-project)
+  script.
+    (() => {
+    const pl = document.querySelector(".pl");
+    if (!pl) { return }
+    pl.querySelector('.pl__trigger').addEventListener('click', (e) => {
+      pl.classList.toggle('_v');
+    })
+    })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

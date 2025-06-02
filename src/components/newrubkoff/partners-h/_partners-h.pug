@@ -1,0 +1,45 @@
+block vars 
+  - var breadcrumbText = ["Main", "houses made of laminated timber"]
+.page.n-news-page.no-section-mg 
+  .page__container
+    .page__breadcrumb.page__breadcrumb_overlay._big
+      include ../../blocks/_breadcrumbgrey
+
+    .n-links-project
+      .n-header-drop__ul 
+        a._icon(href="#")
+          .n-button1 projects 
+          .n-button1 80000
+        a.n-button1(href="#") Stone houses
+        a.n-button1(href="#") Houses made of laminated timber
+        a._icon(href="#")
+          .n-button1 Built houses
+          .n-button1 436
+        a.n-button1(href="#") Interior decoration
+
+    section.page__block.paddingMobSm
+      include ../../newrubkoff/blocks/_nbl-text
+
+    section.page__block.page__block_full-w-mob._noMargin
+      
+      .n-projects
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+        .n-projects__el
+          include ../blocks/_nbl-cardH
+
+      include ../blocks/_nbl-pagination
+  
+include ../blocks/_nbl-end

@@ -1,0 +1,73 @@
+
+.mission-block
+  &__titles 
+    display: none
+    +r($sm)
+      display: initial 
+  .h2.mission-block__title
+    +r($sm)
+      margin-bottom: 60px
+  &__content 
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: aCalc(20)
+    margin-top: aCalc(32)
+    +r($sm)
+      margin-top: 24px
+      grid-template-columns: repeat(2, 1fr)
+      gap: 8px
+  &__item 
+    //background: #00000033
+    background-color: $ErrigalWhite
+    width: auto
+    height: aCalc(274)
+    border-radius: aCalc(12)
+    padding: aCalc(24)
+    backdrop-filter: blur(aCalc(6))
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    +r($sm)
+      padding: 16px
+      border-radius: 12px 
+      width: unset
+      height: unset
+      background-color: $ErrigalWhite
+      min-height: 92px
+      height: 100%
+      gap: 12px
+    .h6 
+      color: $baseTextColor
+      +r($sm)
+        color: $baseTextColor
+    .h1 
+      color: $LightGreen
+      +r($sm)
+        color: $LightGreen
+  .h2, .h4 
+    margin: 0 auto
+    text-align: center
+    max-width: aCalc(771)
+    +r($sm)
+      text-align: left
+      max-width: unset
+.mission-block__el:nth-child(1)
+  left: 30%
+  top: aCalc(150)
+  +r($sm)
+    position: unset
+.mission-block__el:nth-child(2)
+  right: 5%
+  top: aCalc(250)
+  +r($sm)
+    position: unset
+.mission-block__el:nth-child(3)
+  left: 10%
+  top: aCalc(350)
+  +r($sm)
+    position: unset
+.mission-block__el:nth-child(4)
+  right: 25%
+  top: aCalc(450)
+  +r($sm)
+    position: unset

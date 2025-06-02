@@ -1,0 +1,56 @@
+
+
+.nbl-contacts 
+  margin-left: 25.6770833333%
+  margin-bottom: aCalc(180)
+  +r($sm)
+    margin-left: unset
+    margin-top: 40px
+    margin-bottom: 0
+  &__top
+    margin-bottom: aCalc(40)
+    +r($sm)
+      margin-bottom: 40px
+    .n-h1 
+      color: #2E5E5E
+  &__bottom
+    display: flex
+    gap: aCalc(296)
+    +r($sm)
+      gap: unset 
+  &__mail, &__address 
+    transition: color .3s
+    &:hover 
+      color: #2E5E5E
+  &__data 
+    width: aCalc(598)
+  .nbl-contacts__user, .nbl-contacts__data
+    display: flex
+    flex-direction: column
+    gap: aCalc(40)
+    +r($sm)
+      gap: 24px
+    div span
+      display: block
+      margin-bottom: aCalc(8)
+      +r($sm)
+        margin-bottom: 8px
+  .nbl-contacts__data
+    +r($sm)
+      display: none
+  .nbl-contacts__user
+    .n-h3 
+      margin-bottom: aCalc(8)
+      +r($sm)
+        margin-bottom: 8px
+    .n-p2 
+      color: #7B7B7B
+  &__buttons 
+    display: flex
+    gap: aCalc(8)
+    +r($sm)
+      gap: 8px
+    .n-button-green
+      background-color: #0A0A0A
+      .n-button1
+        color: #ffffff

@@ -1,0 +1,20 @@
+
+.inside-benefits
+  &__wrapper 
+    display: flex 
+    justify-content: space-between
+    +r($sm)
+      flex-direction: column
+      gap: 24px
+  &__info 
+    max-width: aCalc(554)
+    +r($sm)
+      max-width: unset
+    h1, .h1
+      margin-bottom: aCalc(40)
+      +r($sm)
+        margin-bottom: 24px
+    .h4 
+      margin-bottom: aCalc(40)
+      +r($sm)
+        margin-bottom: 16px

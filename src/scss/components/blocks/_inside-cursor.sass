@@ -1,0 +1,38 @@
+
+.inside-view__slide
+  position: relative
+  z-index: 0
+  .view-wrapp-left
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+    height: 100%
+    z-index: 100
+    cursor: url('../img/cursor-icon.png'), auto
+  .view-wrapp-right
+    position: absolute
+    right: 0
+    top: 0
+    width: 50%
+    height: 100%
+    z-index: 100
+    cursor: url('../img/cursor-icon-next.png'), auto
+
+.inside-view__slide:first-child
+  cursor: url('../img/cursor-icon-next.png'), auto
+  .view-wrapp-right
+    width: 100%
+
+.inside-view__slide:last-child
+  cursor: url('../img/cursor-icon.png'), auto
+  .view-wrapp-left
+    width: 100%
+
+.inside-view__slide.swiper-slide.swiper-slide-prev
+  .view-wrapp-right, .view-wrapp-left
+    cursor: url('../img/cursor-icon.png'), auto
+
+.inside-view__slide.swiper-slide.swiper-slide-next
+  .view-wrapp-right, .view-wrapp-left
+    cursor: url('../img/cursor-icon-next.png'), auto

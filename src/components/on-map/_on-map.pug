@@ -1,0 +1,37 @@
+block vars 
+  - var breadcrumbText = ["built houses"]
+.page__container
+  .page__breadcrumb.page__breadcrumb_overlay._big
+    include ../blocks/_breadcrumbgrey
+  section.page__block.page__block_no-pad-top.page__block_full-width.nbl-onMap.marginNo
+    .page-block-heading  
+      h1.n-h1 built houses
+    .map-block.map-block_on-map
+      .map-block__flt-ctr
+        .map-block__flt-btn.toggle-tag.slide-button.toggle-tag_gray(data-point-type="Все")
+          span
+            .map-block__circle(style="--bg-active: #2E5E5E;")    
+            .h6 All
+        .map-block__flt-btn.toggle-tag.slide-button.toggle-tag_gray(data-point-type="Готовые дома")
+          span
+            .map-block__circle(style="--bg-active: #2E5E5E;")    
+            .h6 Ready-made houses
+        .map-block__flt-btn.toggle-tag.slide-button.toggle-tag_gray(data-point-type="Cтроящиеся дома")
+          span
+            .map-block__circle(style="--bg-active: #D5B38E;")    
+            .h6 Houses under construction
+        .map-block__flt-btn.toggle-tag.slide-button.toggle-tag_gray(data-point-type="type2")
+          span
+            .map-block__circle(style="--bg-active: #D5B38E;")    
+            .h6 type2
+        
+      .js-ymap(data-type='cluster' data-center='55.752523, 37.623031' data-zoom='11' data-points-url='/api/map.json')
+        include ../newrubkoff/blocks/_nbl-cardPreview
+      template.map-balloon-tpl
+        a.product-card(href='#')
+          .product-card__description
+            .product-card__title
+              .h3
+            .product-card__chars-ctr
+          .product-card__img
+            img(src alt)

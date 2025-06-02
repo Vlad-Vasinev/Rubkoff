@@ -1,0 +1,120 @@
+
+.thumbs-wrapper 
+  display: flex
+  gap: aCalc(20)
+  +r($sm)
+    margin-top: 24px
+  .main-thumb:not(.swiper-initialized) 
+    display: flex
+    width: aCalc(83)
+    box-sizing: border-box
+    height: aCalc(706)
+    flex-direction: column
+    gap: aCalc(6)
+  .swiper-slide
+    position: relative
+    +r($sm)
+      box-sizing: content-box
+      display: flex
+      flex-direction: column
+      gap: 12px
+    &
+      ._infoBlock 
+        position: absolute
+        z-index: 10
+        background-color: $White
+        left: aCalc(12)
+        top: aCalc(12)
+        padding: aCalc(12)
+        border-radius: aCalc(4)
+        +r($sm)
+          display: none
+          top: auto
+          padding: 0
+          bottom: 0
+        .n-h2 
+          margin-bottom: aCalc(12)
+        .n-character + .n-character 
+          margin-top: aCalc(10)
+      ._infoBlock._mobile 
+        display: none
+        +r($sm)
+          padding-left: 12px
+        .n-h2 
+          text-align: left
+        +r($sm)
+          display: block
+          width: 100%
+          position: relative !important
+          top: unset 
+          left: unset
+
+.new-swiper
+  .swiper
+    &.thumbs-block
+      flex: 1
+      overflow: hidden
+
+    .swiper-slide
+      text-align: center
+      background: #fff
+      background-size: cover
+      background-position: center
+      display: -webkit-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      -webkit-justify-content: center
+      justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
+      -webkit-align-items: center
+      align-items: center
+      height: aCalc(900)
+      cursor: pointer
+      +r($sm)
+        height: unset
+        justify-content: unset
+      & img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: aCalc(6)
+        +r($sm)
+          height: 272px
+
+    &.main-thumb
+      width: aCalc(83)
+      height: aCalc(706)
+      overflow: hidden
+      box-sizing: border-box
+      +r($sm)
+        display: none
+      .swiper-slide
+        height: 80px
+        cursor: pointer
+
+      & .swiper-slide
+        flex: 0 1 auto
+        height: aCalc(83)
+        flex-shrink: 0
+        transition: opacity .29s ease-in-out
+        &::before 
+          position: absolute
+          content: ""
+          background-color: #000000 
+          width: 100% 
+          height: 100% 
+          left: 0 
+          top: 0
+          opacity: 0.4
+          border-radius: aCalc(6)
+          z-index: 100
+          transition: opacity .3s
+
+      & .swiper-slide-active
+        &::before 
+          opacity: 0

@@ -1,0 +1,68 @@
+block vars 
+  - var breadcrumbText = ["News"]
+
+.page__container
+  
+  .page__breadcrumb.page__breadcrumb_overlay._big
+    include ../blocks/_breadcrumbgrey 
+  
+  .n-links-project
+    .n-header-drop__ul 
+      a._icon(href="#")
+        .n-button1 Projects 
+        .n-button1 80000
+      a.n-button1(href="#") Stone houses
+      a.n-button1(href="#") Houses made of laminated timber
+      a._icon(href="#")
+        .n-button1 Built houses
+        .n-button1 436
+      a.n-button1(href="#") Interior decoration
+
+  section.page__block.marginNo
+    .nbl-textTruncate._alignCenter
+      .n-h1 News
+      .truncate-wrapper
+        .n-links-project._desk
+          .n-header-drop__ul
+            a._icon(href="#")
+              .n-button1 All
+              .n-button1 334
+            a._icon(href="#")
+              .n-button1 video from youtube 
+              .n-button1 52
+            a._icon(href="#")
+              .n-button1 news 
+              .n-button1 6
+            a._icon(href="#")
+              .n-button1 interior design
+              .n-button1 436
+            a._icon(href="#")
+              .n-button1 design
+              .n-button1 6
+            a._icon(href="#")
+              .n-button1 Useful information
+              .n-button1 6
+            a._icon(href="#")
+              .n-button1 Construction
+              .n-button1 6
+
+  section.page__block.page__block_full-width
+    .four-column-grid
+      - var a = 0
+      while a < 2
+        +clone(4)
+          include ../blocks/_article
+        - a++
+      - var a = 0
+      while a < 1
+        +clone(4)
+          include ../blocks/_article
+        - a++
+      +clone(2)
+        include ../blocks/_article
+      a.article-block._empty(href='#')
+      a.article-block._empty(href='#')
+
+include ../newrubkoff/blocks/_nbl-pagination
+
+include ../newrubkoff/blocks/_nbl-end

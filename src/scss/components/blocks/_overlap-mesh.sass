@@ -1,0 +1,32 @@
+.overlap-mesh
+  display: flex
+  +r($sm)
+    flex-wrap: wrap
+
+.overlap-item 
+  position: relative
+  z-index: auto
+  display: grid 
+  justify-content: center
+  align-items: center
+  width: aCalc(80)
+  height: aCalc(80)
+  border-radius: 50%
+  overflow: hidden
+  border: 1px solid $White
+  +r($sm)
+    width: 60px
+    height: 60px
+  img
+    width: aCalc(80)
+    height: aCalc(80)
+    object-fit: cover
+    +r($sm)
+      width: 60px
+      height: 60px
+  &__numb 
+    background-color: $Beige
+  &:nth-child(n + 1)
+    margin-right: aCalc(-16)
+    +r($sm)
+      margin-right: -16px

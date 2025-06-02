@@ -1,0 +1,245 @@
+.header-search
+  display: block
+  width: 100%
+  position: fixed
+  top: -100%
+  left: 0
+  transition: z-index 0s 0.35s, top 0.35s
+  z-index: 12
+  +mob
+  .n-button1
+    margin-left: aCalc(16)
+    +r($sm)
+      margin-left: 12px
+  .header-search__field
+    position: absolute
+    background: #ffffff
+    right: aCalc(267)
+
+    left: aCalc(270)
+    top: aCalc(8)
+    display: flex
+
+    justify-content: space-between
+    align-items: center
+    padding: aCalc(40)
+
+    +r($lg)
+      top: 0
+      left: 0
+      right: 0
+      background: #fff
+      padding: 18px 16px
+      border-radius: 0
+
+    .input-before
+
+      padding: aCalc(5) aCalc(24) aCalc(5) 0
+
+      +mob
+        display: none
+        padding: 5px 24px 5px 0
+      svg
+        height: 100%
+        width: auto
+
+    input
+      display: block
+      width: 100%
+      outline: none
+      border: none
+      padding: 0
+      margin: 0
+      font-weight: 500
+      padding: 0
+      background: none
+      padding-left: 0
+      font-size: aCalc(26)
+      font-weight: 500
+      line-height: 110%
+      text-transform: uppercase
+      letter-spacing: -1.56px
+      font-family: $secondaryFont
+
+      +placeholder
+        color: $DarkGray
+      +r($lg)
+
+        padding-left: 0
+        font-size: 16px
+        line-height: 22px
+
+    .close-button
+      display: block
+      flex: 0 0 auto
+      +aProp(margin-left, 8)
+      cursor: pointer
+      display: none
+      @extend .cls-btn-rotate
+      svg
+        display: block
+        +aProp(width, 32)
+        +aProp(height, 32)
+        +r($lg)
+          width: 20px
+          height: 20px
+  &[style*='padding-right']
+    .header-search__field
+      +dsk
+        right: aCalc(264)
+
+  .header-search__suggestions
+    position: absolute
+    width: 100%
+    background-color: transparent
+    padding: 0
+    transition: transform 0.3s
+    z-index: -1
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    
+    height: 100vh
+    +r($lg)
+      background: #ffffff
+      opacity: 1
+      height: calc( 100vh - var(--header-height) )
+      padding: 0
+      overflow: scroll
+    .header-search__suggestions-container
+      margin-top: aCalc(80)
+      width: 100%
+      display: flex
+      background-color: #ffffff
+      gap: aCalc(20)
+      transition: padding .3s
+      +r($sm)
+        margin-top: 60px
+        flex-direction: column
+        padding: 0
+      &._active 
+        padding: aCalc(40)
+
+    .product-card
+      width: unset
+
+      +r($sm)
+        display: flex
+        gap: 12px
+        padding: 16px
+        border-top: 1px solid #F1F1F1
+      &:last-child
+        +r($sm)
+          border-bottom: 1px solid #F1F1F1
+      &__img 
+        aspect-ratio: unset
+        +r($sm)
+          flex-shrink: 0
+          width: unset
+        img, video 
+          width: aCalc(186)
+          height: aCalc(140)
+          margin-bottom: aCalc(12)
+          border-radius: aCalc(2)
+          +r($sm)
+            width: 96px
+            height: 72px
+            border-radius: 2px
+      &__description 
+        margin-top: 0
+      .h4 
+        margin-bottom: aCalc(6)
+        +r($sm)
+          margin-bottom: 6px
+
+    .header-search__suggestions-item, .header-search__no-suggestions
+      +aProp(height, 144)
+
+      padding: aCalc(24) aCalc(40)
+
+      display: flex
+
+      +r($lg)
+        height: 122px
+        padding: 16px
+      .header-search__suggestions-desc
+        order: 2
+
+        padding: aCalc(8) aCalc(24)
+
+        display: flex
+        flex-direction: column
+        +r($lg)
+          margin-left: 16px
+          padding: 0
+        .header-search__suggestions-desc-type
+          +aProp(margin-bottom, 2)
+          color: #7B7B7B
+          +r($lg)
+            margin-bottom: 2px
+        .header-search__suggestions-desc-name
+        .header-search__suggestions-desc-area
+          color: #7B7B7B
+          margin-top: auto
+        .area-value
+      .header-search__suggestions-image
+        order: 1
+        +aProp(width, 180)
+        height: 100%
+
+        +r($lg)
+          width: 120px
+        img
+          object-fit: cover
+          +aProp(border-radius, 16)
+          width: 100%
+          height: 100%
+          +r($lg)
+            border-radius: 16px
+    .header-search__no-suggestions
+      align-items: center
+      justify-content: center
+      +r($sm)
+        margin-top: 50px
+    .header-search__suggestions-bottom
+      display: flex
+      padding: aCalc(24) aCalc(40)
+
+      +r($lg)
+        padding: 16px 16px 23px 16px
+      .orange-button
+        background: transparent
+        color: #202020
+
+        border: 1px solid #000
+
+        padding: aCalc(11) aCalc(16)
+
+        +r($lg)
+          padding: 11px 16px
+        &.hovered
+
+      .rolling-arrow
+    &.is-active
+
+      .header-search__suggestions-bottom
+
+      &.no-bottom
+        &.item-1
+          transform: translateY(calc(0% - (256px + 128 * ((100vw - 1280px) / 640))))
+          +r($lg)
+            transform: translateY(calc(0% - (220px + 110 * ((100vw - 1280px) / 640))))
+        .header-search__suggestions-bottom
+          display: none
+  &.is-active
+    transition: top 0.3s 0.05s, z-index 0s 0.03s
+    z-index: map-get($zindex, header) + 1
+    top: 0
+    +r($sm)
+      top: 68px
+
+.header._search-open ~ .modal-background, .header._search-open ~ .page .modal-background
+  z-index: map-get($zindex, header) - 1
+  background-color: #fff
+  opacity: 1 !important

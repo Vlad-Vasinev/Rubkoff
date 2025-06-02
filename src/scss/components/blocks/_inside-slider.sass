@@ -1,0 +1,34 @@
+
+.inside-slider 
+  &__wrapper
+    display: grid 
+    grid-template-columns: repeat(2, 1fr)
+    gap: aCalc(120) aCalc(20)
+    +r($sm)
+      display: flex
+      flex-direction: column
+      gap: 40px
+  .gallery-grid
+    display: initial
+    .product-card__char
+      gap: aCalc(30)
+      .h6._key
+        text-transform: uppercase
+        font-size: aCalc(13)
+        font-style: normal
+        font-weight: 500
+        line-height: 110%
+        letter-spacing: -0.39px
+        color: $ExistentialAngst
+        position: relative
+        +r($sm) 
+          font-size: 11px
+          letter-spacing: -0.33px
+        &::after 
+          position: absolute
+          content: "|"
+          z-index: 10
+          color: $ColdStone
+          right: aCalc(-11)
+          +r($sm)
+            right: -7px

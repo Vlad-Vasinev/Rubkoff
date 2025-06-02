@@ -1,0 +1,32 @@
+
+
+.n-header.header__menu
+  include ../blocks/_nbl-burger
+  .n-logo 
+    <img src="img/newrubkoff/logo.svg" alt="" />
+  .n-search.n-search_mob(data-search-open)
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="10.5" cy="10.5" r="7.5" stroke="#0A0A0A" stroke-width="2"/>
+      <path d="M20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.2929 16.7071L20.2929 21.7071L21.7071 20.2929L16.7071 15.2929L15.2929 16.7071Z" fill="#0A0A0A"/>
+    </svg>
+
+  .n-header__about
+    a._icon(href="#")
+      .n-button1 projects 
+      .n-button1 86
+    a.n-button1(href="#") Company
+    a.n-button1(href="#") partners
+  .n-header__social
+    a.n-button1(href="#" data-search-open) search
+    a.n-button1(href="tel:74998775095") +7 499 877-50-95
+    a._icon(data-modal-open data-modal-name="form-modal")
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 4V11H15.5M15.5 11L11.5 15M15.5 11L11.5 7" stroke="white" stroke-width="2"/>
+      </svg>
+      .n-button1 discuss the project
+
+include ../../blocks/_header-search
+
+include ../blocks/_nbl-headerDrop
+
+include ../blocks/_nbl-headerSidebar
